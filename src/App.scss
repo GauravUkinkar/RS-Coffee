@@ -17,15 +17,15 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  font-family: "Quicksand", serif;
-
+ 
+  font-family: "Roboto Serif", serif;
   // border:1px solid green;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Sacramento&display=swap");
-// font-family: "Montserrat", sans-serif;
-// font-family: "Sacramento", serif;
-// font-family: "Quicksand", serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Spicy+Rice&display=swap');
+
+
+
 
 .parent {
   width: 100%;
@@ -51,6 +51,7 @@ p,
   text-align: center;
   text-align-last: center;
   color: rgb(69, 68, 68);
+  font-family: "Roboto Serif", serif;
 }
 @media only screen and (max-width: 800px) {
   p,
@@ -73,7 +74,7 @@ h4,
 h5,
 h6 {
   font-size: 30px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Spicy Rice", serif;
   font-weight: 700;
   line-height: 120%;
   padding: 10px 0px;
@@ -87,9 +88,7 @@ h6 {
   h5,
   h6 {
     font-size: 28px !important;
-    span {
-      font-size: inherit !important;
-    }
+   
   }
 }
 @media only screen and (max-width: 650px) {
