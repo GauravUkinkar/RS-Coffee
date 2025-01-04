@@ -1,0 +1,55 @@
+.hero-parent {
+  height: 100dvh;
+  background: var(--accent-main);
+ 
+
+  .hero-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--unit);
+    position:relative;
+    z-index: 5;
+    .hero-left {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .hero-heading {
+        color: var(--white);
+        font-size: 68px;
+        font-family: "Roboto Serif", serif;
+
+        // line-height: 70px;
+        // hyphenate-character: 50px;
+      }
+      .hero-desc {
+        color: var(--white);
+      }
+
+      .main-box{
+        display: flex;align-items: center; gap:var(--unit);
+        
+      }
+    }
+    .hero-right {
+      width: 50%;
+      aspect-ratio: 1;
+      background: url("../../assets/hero-coffee.png");
+      
+    }
+    .heading-text{
+        position:absolute;
+        top: 40%;
+        left:80%;
+        transform:translate(-50%, -50%);
+        font-size: 240px;
+        width:5ch;
+        font-weight: 800;
+        color:var(--accent3);
+        z-index: -1;
+        opacity:0.06;
+      }
+  }
+
+}
