@@ -1,10 +1,10 @@
 import React from 'react'
-
-function Hero() {
+import "./hero.scss"
+const Hero = () => {
   return (
-    <div>
-      
-    </div>
+   <div className="hero-parent parent">
+    
+   </div>
   )
 }
 
