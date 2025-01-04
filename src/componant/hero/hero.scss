@@ -1,14 +1,13 @@
 .hero-parent {
   height: 100dvh;
   background: var(--accent-main);
- 
 
   .hero-cont {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: var(--unit);
-    position:relative;
+    position: relative;
     z-index: 5;
     .hero-left {
       width: 50%;
@@ -27,29 +26,48 @@
         color: var(--white);
       }
 
-      .main-box{
-        display: flex;align-items: center; gap:var(--unit);
-        
+      .main-box {
+        display: flex;
+        align-items: center;
+        gap: var(--unit);
+        .box {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          .number {
+            color: var(--white);
+            font-size: 30px;
+            font-weight: 600;
+            span {
+              font-size: 24px;
+              font-weight: 400;
+              opacity: 0.8;
+            }
+          }
+          .descs {
+            color: rgba(255, 255, 255, 0.493);
+          }
+        }
       }
     }
     .hero-right {
       width: 50%;
       aspect-ratio: 1;
       background: url("../../assets/hero-coffee.png");
-      
     }
-    .heading-text{
-        position:absolute;
-        top: 40%;
-        left:80%;
-        transform:translate(-50%, -50%);
-        font-size: 240px;
-        width:5ch;
-        font-weight: 800;
-        color:var(--accent3);
-        z-index: -1;
-        opacity:0.06;
-      }
+    .heading-text {
+      position: absolute;
+      top: 40%;
+      left: 80%;
+      transform: translate(-50%, -50%);
+      font-size: 240px;
+      width: 5ch;
+      font-weight: 800;
+      color: var(--accent3);
+      z-index: -1;
+      opacity: 0.06;
+    }
   }
-
 }
