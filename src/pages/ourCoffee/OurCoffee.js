@@ -1,9 +1,11 @@
 import React from "react";
 import "./ourCoffee.scss";
+import { GiCoffeeBeans } from "react-icons/gi";
 
 function OurCoffee() {
   return (
     <>
+      {/* first section */}
       <div className="parent parent-our-coffee">
         <div className="cont cont-our-coffee">
           <div class="left-our-coffee ">
@@ -17,20 +19,68 @@ function OurCoffee() {
             </p>
             <div class="two-points">
               <div class="bullet">
-                <span>.</span>
+                <span>
+                  <GiCoffeeBeans />
+                </span>
                 <p>
                   Fixed prices for at least 6 months due to direct relationship
                   with farmers
                 </p>
               </div>
               <div class="bullet">
-                <span>.</span>
+                <span>
+                  <GiCoffeeBeans />
+                </span>
                 <p>
                   Consistent quality guaranteed due to origin visit’s before
                   shipment dispatch to Qatar
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* second section */}
+      <div
+        class="parent"
+        style={{ background: "#faf4e5", padding: "50px 0px" }}
+      >
+        <div class="cont">
+          <p style={{ textAlign: "center" }}>
+            All our coffees are Grade 1 Arabica. This is the highest grade of
+            beans, and to be classified as Grade 1 Coffee, the beans need to
+            have no primary defects and 0-3 full defects, with a maximum of 5%
+            above and below the specified screen size.
+          </p>
+        </div>
+      </div>
+
+      {/* counter section */}
+
+      <div class="parent counter-parent">
+        <div class="cont counter-cont">
+            
+        </div>
+      </div>
+
+      {/* third section */}
+      <div className="parent parent-our-coffee-third">
+        <div className="cont cont-our-coffee-third">
+          <div class="left-our-coffee">
+            <h2>Customization</h2>
+            <p>
+              To offer complexity and uniqueness, we create customized blends
+              for our customers with our three main origins.
+            </p>
+            <p>
+              The ratio of the blend will become the signature of that specific
+              customer and will not be repeated for any other customer – while
+              using Wings as the supplier.
+            </p>
+          </div>
+          <div class="right-our-coffee ">
+            <div class="img-coffee-customization bg-img-cover"></div>
           </div>
         </div>
       </div>
