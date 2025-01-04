@@ -41,12 +41,9 @@ a {
 p,
 .para {
   line-height: 28px;
-  letter-spacing: 1px;
-  word-spacing: 4px;
+  letter-spacing: 0.7px;
+  word-spacing: 1px;
   font-size: 20px;
-  max-width: 65ch;
-  //   text-align-last: center;
-
   font-family: "Roboto Serif", serif;
 }
 @media only screen and (max-width: 800px) {
