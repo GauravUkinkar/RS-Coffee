@@ -2,6 +2,7 @@
   --accent-main: #1c1108;
   --accent-text:#514242;
   --accent3: #dcb287;
+  --accent4:#EFDFC5;
   --black: #000003;
   --white: #fff;
   --unit: 20px;
@@ -104,6 +105,7 @@ body {
   background: transparent;
   overflow: hidden;
   text-align: center;
+  justify-content: center !important;
   cursor: pointer;
   z-index: 1;
   transition: var(--trans);

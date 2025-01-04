@@ -1,6 +1,7 @@
 import React from "react";
 import "./hero.scss";
 import { Link } from "react-router-dom";
+import { FaArrowRightLong } from "react-icons/fa6";
 const Hero = () => {
   return (
     <div className="hero-parent parent">
@@ -12,7 +13,7 @@ const Hero = () => {
             precision. Roast coffee with aviation precision.
           </p>
           <Link to="#" className="btn">
-            Read More
+            Shop Now <FaArrowRightLong />
           </Link>
 
           <div className="main-box">

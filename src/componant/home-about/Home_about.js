@@ -5,7 +5,9 @@ const Home_about = () => {
     <>
       <div className="home-about-parent parent">
         <div className="home-about-cont cont">
-          <div className="home-about-left bg-img-cover"></div>
+          <div className="home-about-left ">
+            <div className="coffee-image bg-img-cover"></div>
+          </div>
           <div className="home-about-right">
             <h2 className="home-about-heading">
               Professional Roast Master: Justus du Toit (SCA)
