@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Hero = () => {
+function Hero() {
   return (
     <div>
       
