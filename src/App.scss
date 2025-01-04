@@ -1,6 +1,6 @@
 :root {
-  --accent-main: #514242;
-  --accent2: #efdfc5;
+  --accent-main: #1c1108;
+  --accent-text:#514242;
   --accent3: #dcb287;
   --black: #000003;
   --white: #fff;
@@ -42,7 +42,8 @@ p {
   line-height: 28px;
   letter-spacing: 0.7px;
   word-spacing: 1px;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 400;
   font-family: "Roboto Serif", serif;
 }
 @media only screen and (max-width: 800px) {

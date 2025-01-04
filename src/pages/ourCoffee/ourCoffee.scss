@@ -16,6 +16,7 @@
         aspect-ratio: 3/4;
         border-radius: 10px;
         position: relative;
+        border: 5px solid var(--accent-main);
 
         &::after {
           content: "";
