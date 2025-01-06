@@ -3,6 +3,30 @@ import "./ourCoffee.scss";
 import { GiCoffeeBeans } from "react-icons/gi";
 
 function OurCoffee() {
+  const data = [
+    {
+      count: "84+",
+      icon: <GiCoffeeBeans />,
+      title: "Happy Customers Served",
+      content:
+        "Cafes, restaurants, eateries, and retail consumers receive our      high-quality supplies.",
+    },
+    {
+      count: "86+",
+      icon: <GiCoffeeBeans />,
+      title: "Happy Customers Served",
+      content:
+        "Cafes, restaurants, eateries, and retail consumers receive our      high-quality supplies.",
+    },
+    {
+      count: "90+",
+      icon: <GiCoffeeBeans />,
+      title: "Happy Customers Served",
+      content:
+        "Cafes, restaurants, eateries, and retail consumers receive our      high-quality supplies.",
+    },
+  ];
+
   return (
     <>
       {/* first section */}
@@ -42,12 +66,9 @@ function OurCoffee() {
       </div>
 
       {/* second section */}
-      <div
-        class="parent"
-        style={{ background: "#faf4e5", padding: "50px 0px" }}
-      >
-        <div class="cont">
-          <p style={{ textAlign: "center" }}>
+      <div class="parent second-section-parent">
+        <div class="cont second-section-cont">
+          <p>
             All our coffees are Grade 1 Arabica. This is the highest grade of
             beans, and to be classified as Grade 1 Coffee, the beans need to
             have no primary defects and 0-3 full defects, with a maximum of 5%
@@ -60,7 +81,27 @@ function OurCoffee() {
 
       <div class="parent counter-parent">
         <div class="cont counter-cont">
-            
+          <h2 className="cont-main-heading">
+            We constantly source coffee from the following main origins
+          </h2>
+          <div class="counter-box-main">
+            {data.map((item, index) => (
+              <div class="one-counter counter-box">
+                <div class="no-count">
+                  <h2>{item.count}</h2>
+                  <span>{item.icon}</span>
+                </div>
+                <div class="count-content">
+                  <div class="count-heading">
+                    <h4>{item.title}</h4>
+                  </div>
+                  <div class="count-para">
+                    <p className="para">{item.content}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
