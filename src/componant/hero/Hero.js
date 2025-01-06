@@ -13,7 +13,10 @@ const Hero = () => {
             precision. Roast coffee with aviation precision.
           </p>
           <Link to="#" className="btn">
-            Shop Now <FaArrowRightLong />
+            Shop Now
+            <div className="icon">
+              <FaArrowRightLong />
+            </div>
           </Link>
 
           <div className="main-box">

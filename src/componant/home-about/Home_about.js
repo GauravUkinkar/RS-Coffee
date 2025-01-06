@@ -1,5 +1,7 @@
 import React from "react";
 import "./home-about.scss";
+import { Link } from "react-router-dom";
+import { FaArrowRightLong } from "react-icons/fa6";
 const Home_about = () => {
   return (
     <>
@@ -19,7 +21,12 @@ const Home_about = () => {
               freshest possible coffee to small markets that normally would not
               have access to such a premium quality product.
             </p>
-            <div className="btn">Read More</div>
+            <Link className="btn">
+              Read More{" "}
+              <div className="icon">
+                <FaArrowRightLong />
+              </div>
+            </Link>
           </div>
         </div>
       </div>

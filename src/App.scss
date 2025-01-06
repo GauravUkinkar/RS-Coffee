@@ -1,8 +1,8 @@
 :root {
   --accent-main: #1c1108;
-  --accent-text:#514242;
+  --accent-text: #514242;
   --accent3: #dcb287;
-  --accent4:#EFDFC5;
+  --accent4: #efdfc5;
   --black: #000003;
   --white: #fff;
   --unit: 20px;
@@ -53,7 +53,6 @@ p {
     font-size: inherit !important;
     font-weight: 600 !important;
     font-family: inherit !important;
-    
   }
 }
 
@@ -109,6 +108,30 @@ body {
   cursor: pointer;
   z-index: 1;
   transition: var(--trans);
+  display: flex;
+  gap: 5px;
+  align-items: center;
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2px;
+
+    svg {
+      transition: var(--trans);
+    }
+  }
+
+  &:hover {
+    color: rgb(65, 39, 0);
+
+    .icon svg {
+      color: var(--accent2);
+      transform: rotate(-30deg);
+    }
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -121,10 +144,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    z-index: -1; /* Place behind the text */
-  }
-  &:hover {
-    color: rgb(65, 39, 0);
+    z-index: -1;
   }
 }
 
