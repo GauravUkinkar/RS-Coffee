@@ -1,6 +1,10 @@
 .home-third-section-parent {
-  height: 100dvh;
-  background: var(--accent4);
+  height: auto;
+  padding: 100px 0px;
+  //   background:url("../../assets/leaf.webp");
+  background: linear-gradient(rgba(0, 0, 0, 0.041), rgba(0, 0, 0, 0.041)),
+    url("../../assets/leaf.webp");
+
   .home-third-section-cont {
     display: flex;
     align-items: center;
@@ -8,21 +12,24 @@
     gap: 20px;
     .home-third-left {
       width: 50%;
+      .heading-new {
+        padding-bottom: 30px;
+      }
       .cards {
         width: 100%;
 
         display: flex;
-        gap:30px;
+        gap: 30px;
         flex-direction: column;
         .card {
           display: flex;
           gap: 20px;
-          align-items: center;
+          //   align-items: center;
           justify-content: center;
           .card-left {
-            svg{
-                font-size:40px;
-                color:var(--accent-main);
+            svg {
+              font-size: 40px;
+              color: var(--accent-main);
             }
           }
           .card-right {
@@ -36,10 +43,11 @@
             .sub-heading {
               line-height: 20px;
               text-align: justify;
-              .pointer{
+              font-size: 14px;
+              .pointer {
                 display: flex;
                 flex-direction: column;
-                margin-left:20px;
+                margin-left: 20px;
               }
             }
           }

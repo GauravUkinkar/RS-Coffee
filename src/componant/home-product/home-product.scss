@@ -1,0 +1,114 @@
+.home-product-parent {
+  height: auto;
+  padding: 100px 0;
+
+  .home-product-cont {
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      /* General styling for slides */
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+
+      .swiper-box {
+        // padding: 20px;
+        color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .top-box {
+          width: 100%;
+          border-radius: 10px;
+          background: var(--accent4);
+          border: 1px solid red;
+          padding: 20px;
+          position: relative;
+          .btn-n{
+            display:none;
+          }
+          .coffee-image {
+            height: 350px;
+            background: url("../../assets/product/coffee-1.png");
+            transition: var(--trans);
+            &:hover {
+              background: url("../../assets/product/coffee-2.png");
+            }
+          }
+          .btn-n {
+            transition: var(--trans);
+            display: none;
+            background: var(--accent-main);
+            border-radius: 10px;
+            color: white;
+            position: absolute;
+            bottom: 20px;
+            left: 30%;
+            right: 30%;
+            padding: 10px 20px;
+           
+          }
+          &:hover {
+            .btn-n {
+              display: block; 
+            }
+        }
+
+        }
+        .bottom-box {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid red;
+          flex-direction: column;
+          gap: 5px;
+
+          .product-heading,
+          .product-price {
+            color: var(--accent5);
+            font-size: 22px;
+            font-weight: 500;
+            // font-family: "Spicy Rice", serif;
+          }
+          .product-desc {
+            color: var(--accent5);
+          }
+          .product-price {
+          }
+        }
+      }
+    }
+
+    /* Custom widths for every nth slide */
+    .swiper-slide:nth-child(2n) {
+      width: 60%;
+    }
+
+    .swiper-slide:nth-child(3n) {
+      width: 40%;
+    }
+
+    /* Default width for other slides */
+    .swiper-slide {
+      width: 80%;
+    }
+
+    /* Image styling (if any images are included in slides) */
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

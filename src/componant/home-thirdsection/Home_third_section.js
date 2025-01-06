@@ -4,7 +4,7 @@ import { GiCoffeeBeans } from "react-icons/gi";
 const Home_third_section = () => {
   return (
     <>
-      <div className="home-third-section-parent parent">
+      <div className="home-third-section-parent parent bg-img-cover">
         <div className="home-third-section-cont cont">
           <div className="home-third-left">
             <h2 className="heading-new">
