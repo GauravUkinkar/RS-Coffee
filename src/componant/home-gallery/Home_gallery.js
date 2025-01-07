@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./home-gallery.scss";
-import img1 from "../../assets/gallery/coffee.jpg";
+import img1 from "../../assets/gallery/coffee.webp";
 import img2 from "../../assets/gallery/coffee1.jpg";
 import img3 from "../../assets/gallery/coffee2.jpg";
 import img4 from "../../assets/gallery/coffee3.jpg";

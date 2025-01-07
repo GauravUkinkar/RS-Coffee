@@ -3,6 +3,7 @@ import "./App.scss";
 import Home from "./pages/home/Home";
 import OurCoffee from "./pages/ourCoffee/OurCoffee";
 import Contact from "./pages/contact/Contact";
+import Shop from "./pages/shop/Shop";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/our-coffee" element={<OurCoffee />} />
+        <Route path="/shop" element={<Shop />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
