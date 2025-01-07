@@ -3,6 +3,7 @@ import Hero from '../../componant/hero/Hero'
 import Home_about from '../../componant/home-about/Home_about'
 import Home_third_section from '../../componant/home-thirdsection/Home_third_section'
 import Home_product from '../../componant/home-product/Home_product'
+import Home_gallery from '../../componant/home-gallery/Home_gallery'
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
    <Home_about />
    <Home_third_section />
    <Home_product />
+   <Home_gallery />
     </>
   )
 }

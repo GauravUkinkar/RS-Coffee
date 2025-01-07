@@ -12,7 +12,7 @@ const Home_third_section = () => {
               Roasting Coffee with aviation standards
             </h2>
             <div className="cards">
-              <div className="card">
+              <div className="card-n">
                 <div className="card-left ">
                   <GiCoffeeBeans />
                 </div>
@@ -27,7 +27,7 @@ const Home_third_section = () => {
                   </p>
                 </div>
               </div>
-              <div className="card">
+              <div className="card-n">
                 <div className="card-left ">
                   <GiCoffeeBeans />
                 </div>
@@ -43,7 +43,7 @@ const Home_third_section = () => {
                 </div>
               </div>
 
-              <div className="card">
+              <div className="card-n">
                 <div className="card-left ">
                   <GiCoffeeBeans />
                 </div>
