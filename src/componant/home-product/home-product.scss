@@ -1,11 +1,16 @@
 .home-product-parent {
   height: auto;
-  padding: 100px 0;
+  padding: 50px 0;
 
   .home-product-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     .swiper {
       width: 100%;
       height: 100%;
+      padding:20px 0px 50px 0px;
     }
 
     .swiper-slide {
@@ -19,10 +24,10 @@
       height: auto;
 
       .swiper-box {
-        // padding: 20px;
+        padding-bottom: 20px;
         color: #fff;
         border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -37,12 +42,14 @@
           &:hover {
             background: var(--accent4);
           }
-          .btn-n {
+          .btn-n,
+          .favourite,
+          .btn-search {
             display: none;
           }
           .coffee-image {
             height: 350px;
-
+            border-radius: 5px;
             transition: var(--trans);
           }
           .btn-n {
@@ -52,7 +59,7 @@
             border-radius: 10px;
             color: white;
             position: absolute;
-            bottom: 20px;
+            bottom: 10px;
             left: 30%;
             right: 30%;
             padding: 10px 20px;
@@ -62,6 +69,32 @@
               display: block;
             }
           }
+          // .favourite,
+          // .btn-search {
+          //   transition: var(--trans);
+          //   display: flex;
+          //   background: var(--accent-main);
+          //   border-radius: 50px;
+          //   color: white;
+          //   position: absolute;
+          //   top: 55%;
+          //   // left: 30%;
+          //   padding: 5px;
+          //   right: 20px;
+
+          //   svg {
+          //     font-size: 20px;
+          //   }
+          // }
+          // .favourite {
+          //   top: 45% !important;
+          // }
+          // &:hover {
+          //   .favourite,
+          //   .btn-search {
+          //     display: block;
+          //   }
+          // }
         }
         .bottom-box {
           display: flex;
@@ -84,8 +117,9 @@
           }
         }
       }
+    
     }
-
+ 
     /* Custom widths for every nth slide */
     .swiper-slide:nth-child(2n) {
       width: 60%;
@@ -108,4 +142,11 @@
       object-fit: cover;
     }
   }
+  .swiper-pagination-bullet ,.swiper-pagination-bullet-active{
+    width: 30px;
+    height:4px;
+    border-radius: 10px;
+    background: var(--accent-main);
+  }
 }
+
