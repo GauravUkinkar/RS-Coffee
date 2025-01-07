@@ -30,20 +30,20 @@
         .top-box {
           width: 100%;
           border-radius: 10px;
-          background: var(--accent4);
-          border: 1px solid red;
+          background: var(--accent6);
           padding: 20px;
           position: relative;
-          .btn-n{
-            display:none;
+          transition: var(--trans);
+          &:hover {
+            background: var(--accent4);
+          }
+          .btn-n {
+            display: none;
           }
           .coffee-image {
             height: 350px;
-            background: url("../../assets/product/coffee-1.png");
+
             transition: var(--trans);
-            &:hover {
-              background: url("../../assets/product/coffee-2.png");
-            }
           }
           .btn-n {
             transition: var(--trans);
@@ -56,20 +56,17 @@
             left: 30%;
             right: 30%;
             padding: 10px 20px;
-           
           }
           &:hover {
             .btn-n {
-              display: block; 
+              display: block;
             }
-        }
-
+          }
         }
         .bottom-box {
           display: flex;
           align-items: center;
           justify-content: center;
-          border: 1px solid red;
           flex-direction: column;
           gap: 5px;
 
