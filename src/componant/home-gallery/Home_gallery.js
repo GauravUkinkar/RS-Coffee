@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "./home-gallery.scss";
 import img1 from "../../assets/gallery/coffee.webp";
-import img2 from "../../assets/gallery/coffee1.jpg";
-import img3 from "../../assets/gallery/coffee2.jpg";
-import img4 from "../../assets/gallery/coffee3.jpg";
-import img5 from "../../assets/gallery/coffee4.jpg";
-import img6 from "../../assets/gallery/coffee5.jpg";
-import img7 from "../../assets/gallery/coffee6.jpg";
-import img8 from "../../assets/gallery/coffee7.jpg";
+import img2 from "../../assets/gallery/coffee1.webp";
+import img3 from "../../assets/gallery/coffee2.webp";
+import img4 from "../../assets/gallery/coffee3.webp";
+import img5 from "../../assets/gallery/coffee4.webp";
+import img6 from "../../assets/gallery/coffee6.webp";
+import img7 from "../../assets/gallery/coffee7.webp";
+import img8 from "../../assets/gallery/coffee8.webp";
 import { IoClose } from "react-icons/io5";
 const Home_gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
