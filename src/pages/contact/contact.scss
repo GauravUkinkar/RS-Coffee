@@ -1,0 +1,120 @@
+.main-parent {
+  background: #ece8dd;
+  padding: 30px 10px;
+  background: url("../../assets/bg-image-contact.jpg");
+  .main-cont {
+    .contact-parent {
+      .contact-cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        p {
+          text-align: center;
+        }
+        .contact-company-info {
+          width: 100%;
+          display: flex;
+
+          .location-main-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-right: 1px dashed var(--accent-main);
+
+            &:nth-child(3) {
+              border: none;
+            }
+
+            p {
+              text-align: center;
+            }
+
+            .contact-icons {
+              font-size: 36px;
+              font-weight: 700;
+              color: var(--accent-text);
+            }
+            h4 {
+              font-size: 22px;
+              font-weight: 500;
+              color: var(--accent-text);
+            }
+            p {
+              font-weight: 300;
+              text-align: center;
+              color: var(--accent-text);
+            }
+          }
+
+          .location-box {
+            width: 33.33%;
+          }
+        }
+      }
+    }
+
+    //form
+    .contact-parent-form {
+      padding: 50px 0px;
+      .contact-cont-form {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+        .contact-left {
+          padding: 30px 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          gap: 10px;
+          p {
+            text-align: center;
+          }
+
+          .form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 70%;
+
+            .name-last {
+              display: flex;
+              gap: 10px;
+            }
+
+            input,
+            textarea {
+              width: 100%;
+              padding: 15px 10px;
+              border: 1px solid rgba(0, 0, 0, 0.4);
+              border-radius: 5px;
+              background: #ece8dd;
+           
+              outline: none;
+            }
+            .btn-div {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+        // .contact-right {
+        //   width: 50%;
+
+        //   .img-contact {
+        //     background: url("../../assets/boy_coffee.jpg");
+        //     width: 400px;
+        //     aspect-ratio: 3/4;
+        //     border-radius: 10px;
+        //   }
+        // }
+      }
+    }
+  }
+}

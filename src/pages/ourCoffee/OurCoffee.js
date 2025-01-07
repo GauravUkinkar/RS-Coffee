@@ -106,7 +106,7 @@ function OurCoffee() {
       </div>
 
       {/* third section */}
-      <div className="parent parent-our-coffee-third">
+      <div className="parent parent-our-coffee-third bg-img-cover">
         <div className="cont cont-our-coffee-third">
           <div class="left-our-coffee">
             <h2>Customization</h2>
