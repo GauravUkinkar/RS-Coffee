@@ -13,9 +13,9 @@ function Header() {
     <>
       <div class="parent header-parent">
         <div class="cont header-cont">
-          <div class="header-logo">
+          <Link to="/" class="header-logo">
             <img className="img-heade-logo" src={header_logo} alt="" />
-          </div>
+          </Link>
           <div class="nav-section">
             <Link to="/">Home</Link>
             <Link to="/our-coffee">Our Coffee</Link>
@@ -31,6 +31,8 @@ function Header() {
               <BsCart />
             </span>
           </div>
+        </div>
+        <div class="hamburger-menu">
           <div className="ham-burger">
             <RxHamburgerMenu />
           </div>
