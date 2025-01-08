@@ -25,7 +25,7 @@ const Home_product = ({title}) => {
       product_title: "A-10 Blend",
       product_desc: "Coffee",
       product_price: "42 – ر.ق140",
-      product_detail: "link1",
+      product_detail: "/product-detail",
     },
     {
       id: 2,
@@ -34,7 +34,7 @@ const Home_product = ({title}) => {
       product_title: "Brazil – Diamond",
       product_desc: "Coffee",
       product_price: "42 – ر.ق140",
-      product_detail: "link2",
+      product_detail: "/product-detail",
     },
     {
       id: 3,
@@ -43,7 +43,7 @@ const Home_product = ({title}) => {
       product_title: "Decaf Coffee",
       product_desc: "Coffee",
       product_price: "45 – ر.ق150",
-      product_detail: "link3",
+      product_detail: "/product-detail",
     },
     {
       id: 4,
@@ -52,7 +52,7 @@ const Home_product = ({title}) => {
       product_title: "Drip Solo Bag",
       product_desc: "Drip Bags",
       product_price: "10 – ر.ق90",
-      product_detail: "link4",
+      product_detail: "/product-detail",
     },
     {
       id: 5,
@@ -61,6 +61,7 @@ const Home_product = ({title}) => {
       product_title: "Ethiopia – Guji",
       product_desc: "Coffee",
       product_price: "45 –ق140",
+      product_detail: "/product-detail",
     },
     {
       id: 6,
@@ -69,6 +70,7 @@ const Home_product = ({title}) => {
       product_title: "Honduras Coffee",
       product_desc: "Coffee",
       product_price: "45 –ق140",
+      product_detail: "/product-detail",
     },
     {
       id: 7,
@@ -77,6 +79,7 @@ const Home_product = ({title}) => {
       product_title: "P51 Blend",
       product_desc: "Coffee",
       product_price: "45 –ق140",
+      product_detail: "/product-detail",
     },
     {
       id: 8,
@@ -85,6 +88,7 @@ const Home_product = ({title}) => {
       product_title: "Panama Blend",
       product_desc: "Coffee",
       product_price: "45 –ق140",
+      product_detail: "/product-detail",
     },
     {
       id: 9,
@@ -93,6 +97,7 @@ const Home_product = ({title}) => {
       product_title: "Peru Natural Coffee",
       product_desc: "Coffee",
       product_price: "45 –ق140",
+      product_detail: "/product-detail",
     },
     {
       id: 10,
@@ -101,6 +106,7 @@ const Home_product = ({title}) => {
       product_title: "Peru Washed Coffee",
       product_desc: "Coffee",
       product_price: "45 –ق140",
+      product_detail: "/product-detail",
     },
   ];
   // Initialize AOS

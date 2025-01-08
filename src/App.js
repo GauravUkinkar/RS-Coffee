@@ -8,10 +8,14 @@ import Product_detail from "./pages/product-detail/Product_detail";
 import Footer from "./componant/footer/Footer";
 import PageNotFound from "./pages/page-not-found/PageNotFound";
 import Header from "./componant/header/Header";
+import ScrollToTop from "./Others/ScrollToTop";
+import ScrollToTopButton from "./Others/ScrollToTopButton";
 
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
+    <ScrollToTopButton />
     <Header />
       <Routes>
         <Route path="/" element={<Home />} />
