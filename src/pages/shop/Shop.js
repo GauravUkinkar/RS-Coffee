@@ -1,6 +1,8 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "./shop.scss";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import coffee3 from "../../assets/product/Wings-9-scaled.webp";
 import coffee4 from "../../assets/product/Wings-10-scaled.webp";
 import "../../componant/home-product/home-product.scss";
@@ -8,6 +10,11 @@ import "../../componant/home-product/home-product.scss";
 function Shop() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const swiperRef = useRef(null);
+
+  useEffect(() => {
+    AOS.init({ duration: 1200 });
+  }, []);
+
   const products = [
     {
       id: 1,
@@ -40,13 +47,13 @@ function Shop() {
 
   return (
     <>
-      <div class="parent shop-parent">
-        <div class="cont shop-cont">
-          <div class="shop-label">
-            <div class="dropdown dropdown-main">
-              <label for="">Sort By </label>
+      <div className="parent shop-parent">
+        <div className="cont shop-cont">
+          <div className="shop-label" data-aos="fade-down">
+            <div className="dropdown dropdown-main">
+              <label>Sort By </label>
               <button
-                class="btn-secondary dropdown-toggle dropdown-btn"
+                className="btn-secondary dropdown-toggle dropdown-btn"
                 type="button"
                 id="dropdownMenuButton1"
                 data-bs-toggle="dropdown"
@@ -54,19 +61,19 @@ function Shop() {
               >
                 Dropdown button
               </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Action
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Another action
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Something else here
                   </a>
                 </li>
@@ -74,14 +81,16 @@ function Shop() {
             </div>
           </div>
 
-          {/* cards */}
-          <div class="bottom-card">
+          {/* Cards */}
+          <div className="bottom-card">
             {products.map((item, index) => (
               <Link
+                key={item.id}
                 to={item.product_detail}
                 className="swiper-box"
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
+                data-aos="fade-up"
               >
                 <div
                   className="top-box"
