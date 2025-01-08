@@ -49,7 +49,7 @@ const Home_gallery = () => {
             }}
             onClick={() => openLightbox(image)}
             data-aos="zoom-in"
-            data-aos-delay={`${index * 100}`} // Delay for staggered animation
+           
           >
             <div className="overlay"></div>
             <div className="icon">+</div>

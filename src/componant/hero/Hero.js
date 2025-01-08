@@ -37,36 +37,18 @@ const Hero = () => {
               <FaArrowRightLong />
             </div>
           </Link>
-
-          <div className="main-box" data-aos="fade-up" data-aos-delay="800">
-            <div className="box" data-aos="fade-up" data-aos-delay="1000">
-              <div className="number">
-                50 <span>+</span>
-              </div>
-              <div className="descs">ITEM OF COFFEE</div>
-            </div>
-            <div className="box" data-aos="fade-up" data-aos-delay="1200">
-              <div className="number">
-                50 <span>+</span>
-              </div>
-              <div className="descs">ORDER RUNNING</div>
-            </div>
-            <div className="box" data-aos="fade-up" data-aos-delay="1400">
-              <div className="number">
-                5k <span>+</span>
-              </div>
-              <div className="descs">HAPPY CUSTOMER</div>
-            </div>
-          </div>
         </div>
         <div
           className="hero-right bg-img-contain"
           data-aos="fade-up"
-         
-        ></div>
+        >
+          <div className="animation">
+            <div className="p2"></div>
+            <div className="p1"></div>
+          </div>
+        </div>
         <div
           className="heading-text"
-         
         >
           Wings Coffee
         </div>

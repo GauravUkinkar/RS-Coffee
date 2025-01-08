@@ -42,7 +42,7 @@ const Home_third_section = () => {
                 </div>
               </div>
 
-              <div className="card-n" data-aos="fade-down" data-aos-delay="400">
+              <div className="card-n" data-aos="fade-up" data-aos-delay="400">
                 <div className="card-left">
                   <GiCoffeeBeans />
                 </div>

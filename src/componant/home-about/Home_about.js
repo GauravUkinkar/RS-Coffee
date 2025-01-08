@@ -19,13 +19,13 @@ const Home_about = () => {
         <div className="home-about-cont cont">
           <div
             className="home-about-left"
-            data-aos="fade-right"
+            data-aos="zoom-in"
             data-aos-delay="200"
           >
             <div
               className="coffee-image bg-img-cover"
-              data-aos="zoom-in"
-              data-aos-delay="400"
+              // data-aos="zoom-in"
+              // data-aos-delay="400"
             ></div>
           </div>
           <div

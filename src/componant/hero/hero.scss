@@ -1,3 +1,18 @@
+@keyframes loopAnimation {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05) rotate(5deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
 .hero-parent {
   height: 100dvh;
   background: var(--accent-main);
@@ -9,92 +24,88 @@
     gap: var(--unit);
     position: relative;
     z-index: 5;
+
     .hero-left {
       width: 50%;
       display: flex;
       flex-direction: column;
       gap: 20px;
+
       .hero-heading {
         color: var(--white);
         font-size: 68px;
         font-weight: 600;
+        line-height: 64
+        
+        px;
         font-family: "Roboto Serif", serif;
       }
+
       .hero-desc {
         color: var(--white);
       }
-
-      .main-box {
-        display: flex;
-        align-items: center;
-        gap: var(--unit);
-        .box {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          gap: 10px;
-          .number {
-            color: var(--white);
-            font-size: 30px;
-            font-weight: 600;
-            span {
-              font-size: 24px;
-              font-weight: 400;
-              opacity: 0.8;
-            }
-          }
-          .descs {
-            color: rgba(255, 255, 255, 0.493);
-          }
-        }
-      }
     }
+
     .hero-right {
       width: 50%;
       aspect-ratio: 1;
       background: url("../../assets/hero-coffee.png");
+      background-size: cover;
+      background-position: center;
+      animation: loopAnimation 5s infinite ease-in-out; /* Apply looping animation */
     }
+
     .heading-text {
       position: absolute;
       top: 40%;
       left: 80%;
       transform: translate(-50%, -50%);
       font-size: 240px;
+      line-height: 250px;
       width: 5ch;
       font-weight: 800;
       color: var(--accent3);
       z-index: -1;
       opacity: 0.06;
+      -webkit-user-select: none;
+      }
     }
   }
-}
+
+
 @media only screen and (max-width: 1000px) {
   .hero-parent {
     height: 100%;
     padding: 50px 0px;
+
     .hero-cont {
       flex-direction: column-reverse;
+
       .hero-left {
         width: 100%;
         gap: 10px;
         align-items: center;
         justify-content: center;
+
         .hero-heading {
           font-size: 50px;
           padding-bottom: 0;
         }
+
         .hero-desc {
           text-align: center;
         }
+
         .main-box {
           padding-top: 20px;
         }
       }
+
       .hero-right {
         width: 100%;
         height: 350px;
       }
+
       .heading-text {
         top: 30%;
         left: 40%;
@@ -103,6 +114,7 @@
     }
   }
 }
+
 @media only screen and (max-width: 650px) {
   .hero-parent {
     .hero-cont {
@@ -111,17 +123,21 @@
           text-align: center;
           font-size: 45px;
         }
+
         .hero-desc {
           text-align: center;
         }
+
         .main-box {
           padding-top: 20px;
         }
       }
+
       .hero-right {
         width: 100%;
         height: 350px;
       }
+
       .heading-text {
         left: 40%;
         font-size: 140px;
@@ -146,14 +162,15 @@
           }
         }
       }
+
       .hero-right {
       }
+
       .heading-text {
         top: 20%;
         left: 45%;
         font-size: 140px;
         overflow: hidden;
-        // font-size: 180px;
       }
     }
   }
