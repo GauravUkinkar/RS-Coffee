@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./home-product.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"; // Import core Swiper styles
@@ -10,6 +10,8 @@ import coffee1 from "../../assets/product/coffee-1.png";
 import coffee2 from "../../assets/product/coffee-2.png";
 import coffee3 from "../../assets/product/Wings-9-scaled.webp";
 import coffee4 from "../../assets/product/Wings-10-scaled.webp";
+import AOS from "aos";
+import "aos/dist/aos.css";
 // import { MdFavoriteBorder } from "react-icons/md";
 // import { IoIosSearch } from "react-icons/io";
 const Home_product = ({title}) => {
@@ -101,7 +103,14 @@ const Home_product = ({title}) => {
       product_price: "45 –ق140",
     },
   ];
-
+  // Initialize AOS
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      easing: "ease-in-out", // Animation easing
+    
+    });
+  }, []);
   return (
     <div className="home-product-parent parent">
       <div className="home-product-cont cont">
@@ -117,16 +126,36 @@ const Home_product = ({title}) => {
             delay: 3000,
             disableOnInteraction: false,
           }}
+          breakpoints={{
+           
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            
+            720: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            // when the viewport is 1024px or larger
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          }}
+
+
           modules={[Pagination, Autoplay]}
           className="mySwiper"
         >
           {products.map((item, index) => (
-            <SwiperSlide key={item.id}>
+            <SwiperSlide key={item.id} >
               <Link
                 to={item.product_detail}
                 className="swiper-box"
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
+                data-aos="zoom-in"
               >
                 <div
                   className="top-box"
@@ -153,7 +182,7 @@ const Home_product = ({title}) => {
                   <IoIosSearch />
                   </Link> */}
                 </div>
-                <div className="bottom-box">
+                <div className="bottom-box" >
                   <div className="product-heading">{item.product_title}</div>
                   <p className="product-desc">{item.product_desc}</p>
                   <div className="product-price">{item.product_price}</div>
