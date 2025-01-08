@@ -9,6 +9,10 @@ import { RxHamburgerMenu } from "react-icons/rx";
 function Header() {
   const [navOpen, setNavOpen] = useState(false);
 
+  const handleNavClose = () => {
+    setNavOpen(false);
+  };
+
   return (
     <>
       <div class="parent header-parent">
@@ -32,11 +36,27 @@ function Header() {
             </span>
           </div>
         </div>
-        <div class="hamburger-menu">
+        <div class="hamburger-menu" onClick={() => setNavOpen(!navOpen)}>
           <div className="ham-burger">
             <RxHamburgerMenu />
           </div>
         </div>
+      </div>
+
+      {/* mobile nav */}
+      <div className={`mob-nav ${navOpen ? "active" : ""}`}>
+        <Link to="/" onClick={handleNavClose}>
+          Home
+        </Link>
+        <Link to="/our-coffee" onClick={handleNavClose}>
+          Our Coffee
+        </Link>
+        <Link to="/shop" onClick={handleNavClose}>
+          Shop
+        </Link>
+        <Link to="/contact" onClick={handleNavClose}>
+          Contact
+        </Link>
       </div>
     </>
   );
