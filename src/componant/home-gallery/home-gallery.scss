@@ -1,100 +1,127 @@
 .home-gallery-parent {
-    height: auto;
-    padding: 100px 0px;
-    position: relative;
-    background: linear-gradient(rgba(0, 0, 0, 0.041), rgba(0, 0, 0, 0.041)),
-      url("../../assets/leaf.webp");
-  
-    .home-gallery-cont {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    }
-  
-    .images-box {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      height: 550px;
-  
-      .new-box {
-        width: calc(100% / 4);
-        cursor: pointer;
-        transition: var(--trans);
-        position: relative;
-  
+  height: 100%;
+  padding: 50px 0px 0px 0px;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.041), rgba(0, 0, 0, 0.041)),
+    url("../../assets/leaf.webp");
+
+  .home-gallery-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .images-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 550px;
+
+    .new-box {
+      width: calc(100% / 4);
+      cursor: pointer;
+      transition: var(--trans);
+      position: relative;
+
+      .overlay {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.514);
+        display: none;
+        position: absolute;
+      }
+
+      .icon {
+        position: absolute;
+        font-size: 40px;
+        color: white;
+        top: 50%;
+        left: 50%;
+        transform: var(--trans);
+        display: none;
+      }
+
+      &:hover {
         .overlay {
-          width: 100%;
-          height: 100%;
-          background: rgba(0, 0, 0, 0.514);
-          display: none; 
-          position: absolute;
+          display: block;
         }
-  
+
         .icon {
-          position: absolute;
-          font-size:40px;
-          color: white;
-          top: 50%;
-          left: 50%;
-          transform: var(--trans);
-          display: none; 
-        }
-  
-        &:hover {
-          .overlay {
-            display: block;
-          }
-  
-          .icon {
-            display: block; 
-          }
+          display: block;
         }
       }
     }
-  
-    .lightbox-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.7);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 1000;
-    }
-  
-    .lightbox-content {
-      position: relative;
-      width: 70%;
-      height: 90%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .lightbox-content img {
-      width: 100%;
-      height: 100%;
-      border-radius: 10px;
-    }
-  
-    .close-btn {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      cursor: pointer;
-      background: var(--accent4);
-      padding: 5px;
-      border-radius: 50px;
-  
-      svg {
-        font-size: 24px;
-        color: var(--accent-main);
+    @media only screen and (max-width: 900px) {
+      .new-box {
+        width: calc(100% / 3);
       }
     }
   }
-  
+  @media only screen and (max-width: 650px) {
+    .images-box {
+      height: 800px;
+      padding: 0;
+      .new-box {
+        width: calc(100% / 2);
+        height: 200px;
+      }
+    }
+  }
+
+  .lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .lightbox-content {
+    position: relative;
+    width: 70%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lightbox-content img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background: var(--accent4);
+    padding: 5px;
+    border-radius: 50px;
+
+    svg {
+      font-size: 24px;
+      color: var(--accent-main);
+    }
+  }
+
+  @media only screen and (max-width:1000px){
+    .lightbox-content{
+      width: 80%;
+      height: 60%;
+    }
+  }
+  @media only screen and (max-width:600px){
+    .lightbox-content{
+      width: 90%;
+      height: 350px;
+    }
+  }
+}

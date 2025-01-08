@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./home-gallery.scss";
 import img1 from "../../assets/gallery/coffee.webp";
 import img2 from "../../assets/gallery/coffee1.webp";
@@ -9,6 +9,9 @@ import img6 from "../../assets/gallery/coffee6.webp";
 import img7 from "../../assets/gallery/coffee7.webp";
 import img8 from "../../assets/gallery/coffee8.webp";
 import { IoClose } from "react-icons/io5";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Home_gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -22,12 +25,21 @@ const Home_gallery = () => {
     setSelectedImage(null);
   };
 
+  // Initialize AOS
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      easing: "ease-in-out", // Easing for animations
+      once: true, // Trigger animations only once
+    });
+  }, []);
+
   return (
     <div className="home-gallery-parent parent bg-img-cover">
-      <div className="home-gallery-cont cont">
+      <div className="home-gallery-cont cont" data-aos="fade-right">
         <h2>Our Gallery</h2>
       </div>
-      <div className="images-box">
+      <div className="images-box" data-aos="fade-up">
         {images.map((image, index) => (
           <div
             key={index}
@@ -36,6 +48,8 @@ const Home_gallery = () => {
               backgroundImage: `url(${image})`,
             }}
             onClick={() => openLightbox(image)}
+            data-aos="zoom-in"
+            data-aos-delay={`${index * 100}`} // Delay for staggered animation
           >
             <div className="overlay"></div>
             <div className="icon">+</div>
