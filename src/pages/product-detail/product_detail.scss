@@ -1,7 +1,7 @@
 .product-detail-parent {
   padding: 100px 0px;
   //     background:red;
-  //     height:100dvh;
+  height: 100%;
 
   .product-detail-cont {
     display: flex;
@@ -164,18 +164,78 @@
           left: 17%;
           //   background: var(--accent5);
           color: var(--accent-main);
-          
         }
-        @media only screen and (max-width:1130px){
-          .btn-box2{
-            left:25%;
+        @media only screen and (max-width: 1130px) {
+          .btn-box2 {
+            left: 25%;
           }
         }
       }
       .details {
-        border: 1px solid rgba(0, 0, 0, 0.116);;
+        border: 1px solid rgba(0, 0, 0, 0.116);
         padding: 40px 10px 10px 10px;
         border-radius: 5px;
+      }
+    }
+
+    @media only screen and (max-width: 800px) {
+      .product-detail-top {
+        flex-direction: column;
+        .product-detail-top-left,
+        .product-detail-top-right {
+          width: 100%;
+        }
+      }
+      .product-detail-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        .top-top {
+          width: 100%;
+          bottom: -40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          .btn-box1 {
+            left: 0;
+          }
+          .btn-box2 {
+            right: 0 !important;
+            width: fit-content;
+            position: absolute;
+          }
+        }
+      }
+    }
+
+    @media only screen and (max-width: 700px) {
+      .product-detail-bottom {
+        .top-top {
+          .btn-box2 {
+            left: 42%;
+          }
+        }
+      }
+    }
+
+    @media only screen and (max-width: 450px) {
+      .product-detail-bottom {
+        .top-top {
+          height: 30px;
+          .btn-box1 {
+            left: 0;
+            bottom: 0;
+          }
+          .btn-box2 {
+            top: 110%;
+            left: 0;
+          }
+        }
+        .details {
+          padding: 60px 10px 10px 10px;
+        }
       }
     }
   }
