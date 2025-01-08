@@ -5,6 +5,7 @@ import OurCoffee from "./pages/ourCoffee/OurCoffee";
 import Contact from "./pages/contact/Contact";
 import Shop from "./pages/shop/Shop";
 import Product_detail from "./pages/product-detail/Product_detail";
+import Footer from "./componant/footer/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/product-detail" element={<Product_detail /> } />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
