@@ -71,6 +71,36 @@
   }
 }
 
+.mob-nav {
+  background: var(--white);
+  z-index: 10;
+  min-height: 100vh;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition: var(--trans);
+  padding-top: 100px;
+  overflow: hidden;
+
+  a {
+    color: var(--accent-main);
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 20px;
+  }
+
+  &.active {
+    width: 100vw; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 1000px) {
   .header-parent {
     .header-cont {
@@ -109,6 +139,7 @@
     .hamburger-menu {
       display: block;
       color: white;
+      cursor: pointer;
     }
   }
 }
