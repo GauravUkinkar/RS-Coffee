@@ -49,14 +49,6 @@ p {
   font-weight: 400;
   font-family: "Roboto Serif", serif;
 }
-@media only screen and (max-width: 800px) {
-  p,
-  span {
-    font-size: inherit !important;
-    font-weight: 600 !important;
-    font-family: inherit !important;
-  }
-}
 
 h1,
 h2,
@@ -71,27 +63,6 @@ h6 {
   padding: 10px 0px;
   letter-spacing: 1.5px;
   color: var(--accent-main);
-}
-
-@media only screen and (max-width: 800px) {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-size: 28px !important;
-  }
-}
-@media only screen and (max-width: 650px) {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-size: 24px !important;
-  }
 }
 
 body {
@@ -164,6 +135,6 @@ body {
 
 .line{
   width:100%;
-  background:var(--accent-main);
-  height:2px;
+  background:rgba(0, 0, 0, 0.116);
+  height:1px;
 }

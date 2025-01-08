@@ -12,7 +12,7 @@ import coffee3 from "../../assets/product/Wings-9-scaled.webp";
 import coffee4 from "../../assets/product/Wings-10-scaled.webp";
 // import { MdFavoriteBorder } from "react-icons/md";
 // import { IoIosSearch } from "react-icons/io";
-const Home_product = () => {
+const Home_product = ({title}) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const swiperRef = useRef(null);
   const products = [
@@ -105,7 +105,7 @@ const Home_product = () => {
   return (
     <div className="home-product-parent parent">
       <div className="home-product-cont cont">
-        <h2>Our Product </h2>
+        <h2>{title}</h2>
         <Swiper
           ref={swiperRef}
           slidesPerView={3}

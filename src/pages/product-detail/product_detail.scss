@@ -16,31 +16,122 @@
         width: 50%;
         display: flex;
         gap: 5px;
+        align-items: center;
         .product-box-left {
           width: 10%;
-
-          height: 350px;
+          height: 250px;
           display: flex;
           align-items: center;
           justify-content: center;
           flex-direction: column;
-          gap: 10px;
+          gap: 5px;
+
           .product-box-l-top {
-            background: blue;
             height: 140px;
-            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
             width: 100%;
           }
         }
         .product-box-right {
           width: 90%;
-          background: red;
+          border-radius: 5px;
           height: 350px;
         }
       }
-
+      // product details right side
       .product-detail-top-right {
         width: 50%;
+        .product-title {
+          font-size: 24px;
+          font-family: "Roboto Serif", serif;
+          font-weight: 500;
+          margin: 0px;
+          line-height: 20px;
+        }
+        .price {
+          font-size: 22px;
+
+          font-family: "Roboto Serif", serif;
+          font-weight: 500;
+          margin: 0px;
+          line-height: 20px;
+        }
+        .grind-size,
+        .weight {
+          padding: 20px 10px;
+          color: var(--accent-main);
+          font-weight: 500;
+          font-size: 20px;
+        }
+        .weight {
+          padding: 20px 40px 20px 10px;
+        }
+
+        select {
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          padding: 10px;
+          font-size: 16px;
+          color: #333;
+          background-color: #fff;
+        }
+
+        select:hover {
+          border-color: var(--accent3);
+          background-color: var(--accent6);
+        }
+
+        select:focus {
+          border-color: var(--accent5);
+        }
+
+        // counter btn
+
+        .counter {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 10px;
+          padding: 10px;
+
+          .counter-btn {
+            width: 40px;
+            height: 40px;
+            border: none;
+            background-color: var(--accent3);
+            color: var(--white);
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--trans);
+            &:hover {
+              background-color: var(--accent6);
+              color: var(--accent-main);
+            }
+          }
+          .counter-value {
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--accent-main);
+            text-align: center;
+            width: 40px;
+          }
+          .btn-new {
+            padding: 10px 20px;
+            background-color: var(--accent-main);
+            color: var(--white);
+            border-radius: 5px;
+            font-size: 14px;
+
+            cursor: pointer;
+            transition: var(--trans);
+            &:hover {
+              transform: scale(1.05);
+            }
+          }
+        }
       }
     }
 
@@ -64,25 +155,27 @@
           left: 20px;
           cursor: pointer;
 
-          &.active{
+          &.active {
             background-color: var(--accent5);
-            color:white;
+            color: white;
           }
         }
         .btn-box2 {
           left: 17%;
-        //   background: var(--accent5);
+          //   background: var(--accent5);
           color: var(--accent-main);
-
           
+        }
+        @media only screen and (max-width:1130px){
+          .btn-box2{
+            left:25%;
+          }
         }
       }
       .details {
-        border: 1px solid var(--accent-main);
+        border: 1px solid rgba(0, 0, 0, 0.116);;
         padding: 40px 10px 10px 10px;
-        border-radius: 10px;
-
-
+        border-radius: 5px;
       }
     }
   }
