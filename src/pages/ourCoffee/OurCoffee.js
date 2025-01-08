@@ -9,21 +9,21 @@ function OurCoffee() {
       icon: <GiCoffeeBeans />,
       title: "Happy Customers Served",
       content:
-        "Cafes, restaurants, eateries, and retail consumers receive our      high-quality supplies.",
+        "Cafes, restaurants, eateries, and retail consumers receive our high-quality supplies.",
     },
     {
       count: "86+",
       icon: <GiCoffeeBeans />,
       title: "Happy Customers Served",
       content:
-        "Cafes, restaurants, eateries, and retail consumers receive our      high-quality supplies.",
+        "Cafes, restaurants, eateries, and retail consumers receive our high-quality supplies.",
     },
     {
       count: "90+",
       icon: <GiCoffeeBeans />,
       title: "Happy Customers Served",
       content:
-        "Cafes, restaurants, eateries, and retail consumers receive our      high-quality supplies.",
+        "Cafes, restaurants, eateries, and retail consumers receive our high-quality supplies.",
     },
   ];
 
@@ -109,6 +109,9 @@ function OurCoffee() {
       <div className="parent parent-our-coffee-third bg-img-cover">
         <div className="cont cont-our-coffee-third">
           <div class="left-our-coffee">
+            <div class="right-our-coffee ">
+              <div class="img-coffee-customization bg-img-cover"></div>
+            </div>
             <h2>Customization</h2>
             <p>
               To offer complexity and uniqueness, we create customized blends
@@ -119,9 +122,6 @@ function OurCoffee() {
               customer and will not be repeated for any other customer – while
               using Wings as the supplier.
             </p>
-          </div>
-          <div class="right-our-coffee ">
-            <div class="img-coffee-customization bg-img-cover"></div>
           </div>
         </div>
       </div>

@@ -1,0 +1,32 @@
+.pagenotfound-parent {
+  height: calc(100vh - 60px);
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.116), rgba(0, 0, 0, 0.753)),
+    url("../../assets/bg_pagenotfound.webp");
+
+  .pagenotfound-cont {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    .headding-div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+      .head1 {
+        font-size: 50px;
+        font-weight: 900;
+        letter-spacing: 5px;
+      }
+      .head2 {
+        font-size: 40px;
+        font-weight: 700;
+        margin: 0;
+      }
+    }
+  }
+}

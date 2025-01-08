@@ -11,7 +11,7 @@ const Footer = () => {
       <div class="parent footer-parent">
         <div class="cont footer-cont">
           <div class="company-details">
-            <div className="footer-logo bg-img-cover"></div>
+            <Link to="/home" className="footer-logo bg-img-cover"></Link>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit, Libero
               itaque nulla hic facere.
@@ -22,10 +22,10 @@ const Footer = () => {
               <h4>Pages</h4>
             </div>
             <div class="pages-link">
-              <Link>Home</Link>
-              <Link>Our Coffee</Link>
-              <Link>Shop</Link>
-              <Link>Contact</Link>
+              <Link to="/">Home</Link>
+              <Link to="/our-coffee">Our Coffee</Link>
+              <Link to="/shop">Shop</Link>
+              <Link to="/contact">Contact</Link>
             </div>
           </div>
           <div class="footer-social-media">
@@ -47,15 +47,36 @@ const Footer = () => {
                 <span className="footer-iconss">
                   <LiaMailBulkSolid />
                 </span>
-                <Link className="content-icons">info@wingscoffeedoha.com</Link>
+                <a
+                  className="content-icons"
+                  href="mailto:info@wingscoffeedoha.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  info@wingscoffeedoha.com
+                </a>
               </div>
 
               <div class="icons-details-address">
                 <span>
                   <MdOutlinePhone className="footer-iconss" />
                 </span>
-                <Link className="content-icons">+ 974 55398248, </Link>
-                <Link className="content-icons">+ 974 55016107</Link>
+                <a
+                  className="content-icons"
+                  href="tel:974 55398248"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  + 974 55398248,{" "}
+                </a>
+                <a
+                  className="content-icons"
+                  href="tel:974 55016107"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  + 974 55016107
+                </a>
               </div>
 
               <div class="icons-details-address">
