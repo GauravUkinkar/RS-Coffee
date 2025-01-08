@@ -6,6 +6,7 @@ import Contact from "./pages/contact/Contact";
 import Shop from "./pages/shop/Shop";
 import Product_detail from "./pages/product-detail/Product_detail";
 import Footer from "./componant/footer/Footer";
+import PageNotFound from "./pages/page-not-found/PageNotFound";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         <Route path="/shop" element={<Shop />} />
         <Route path="/product-detail" element={<Product_detail /> } />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<PageNotFound />} />
+
       </Routes>
       <Footer />
     </BrowserRouter>
