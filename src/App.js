@@ -7,10 +7,12 @@ import Shop from "./pages/shop/Shop";
 import Product_detail from "./pages/product-detail/Product_detail";
 import Footer from "./componant/footer/Footer";
 import PageNotFound from "./pages/page-not-found/PageNotFound";
+import Header from "./componant/header/Header";
 
 function App() {
   return (
     <BrowserRouter>
+    <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/our-coffee" element={<OurCoffee />} />

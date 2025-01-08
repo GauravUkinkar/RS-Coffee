@@ -75,6 +75,7 @@
 
 //counter section
 .counter-parent {
+  padding: 0px 10px;
   .counter-cont {
     margin-top: -100px;
     background-color: var(--accent-main);
@@ -247,60 +248,133 @@
       }
     }
   }
-  
+
+  //counter section
+  .counter-parent {
+    padding: 0px 10px;
+    .counter-cont {
+      margin-top: -100px;
+      background-color: var(--accent-main);
+      padding: 20px 10px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+
+      .cont-main-heading {
+        color: var(--accent3);
+        font-size: 34px;
+        font-weight: 500;
+      }
+
+      .counter-box-main {
+        display: flex;
+        .counter-box {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-right: 1px dashed var(--accent4);
+          flex-direction: column;
+
+          &:nth-last-child(1) {
+            border-right: none;
+          }
+          .no-count {
+            display: flex;
+            gap: 20px;
+
+            h2 {
+              font-size: 44px;
+              font-weight: 500;
+              color: var(--accent4);
+            }
+            span {
+              font-size: 34px;
+              font-weight: 700;
+              // color: var(--accent-text);
+              color: var(--accent4);
+            }
+          }
+          .count-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .count-heading {
+              h4 {
+                font-size: 22px;
+                font-weight: 500;
+                color: var(--accent4);
+              }
+            }
+            .count-para {
+              .para {
+                font-weight: 300;
+                text-align: center;
+                color: var(--accent4);
+              }
+            }
+          }
+        }
+        .one-counter {
+          width: 33.33%;
+        }
+      }
+    }
+  }
+
   //third section
   .parent-our-coffee-third {
     .cont-our-coffee-third {
-      flex-direction: column;
-
+      flex-direction: column-reverse;
+      gap: 20px;
+  
+      .right-our-coffee {
+        width: 100%;
+     
+  
+        .img-coffee-customization {
+    
+          width: 300px;
+       
+  
+          &::after {
+            content: "";
+            width: 300px;
+            
+          }
+        }
+      }
+  
       .left-our-coffee {
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 15px;
-
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        gap: 0px;
+        
+  
         .two-points {
           display: flex;
-          gap: 20px;
+          gap: 10px;
 
+  
           .bullet {
             display: flex;
             display: flex;
             align-items: flex-start;
             justify-content: center;
             gap: 20px;
-
+  
             span {
               font-size: 35px;
               color: var(--accent-main);
             }
-          }
-        }
-      }
-
-      .right-our-coffee {
-        width: 100%;
-
-        .img-coffee-customization {
-          background: url("../../assets/customization.webp");
-          width: 350px;
-          aspect-ratio: 3/4;
-          position: relative;
-          border-radius: 10px;
-
-          &::after {
-            content: "";
-            width: 350px;
-            border: 2px solid var(--accent-main);
-            aspect-ratio: 3/4;
-            background-color: transparent;
-            position: absolute;
-            z-index: -1;
-            top: 0;
-            left: 0;
-            right: 0;
-            rotate: 10deg;
-            border-radius: calc(var(--unit) / 2);
           }
         }
       }
@@ -349,7 +423,6 @@
   //third section
   .parent-our-coffee-third {
     .cont-our-coffee-third {
-      flex-direction: column;
 
       .left-our-coffee {
         align-items: flex-start;
@@ -387,9 +460,4 @@
       }
     }
   }
-}
-
-
-@media (max-width:1200px){
-  
 }
