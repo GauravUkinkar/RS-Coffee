@@ -8,8 +8,8 @@
   .header-cont {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    gap: 10px;
+    justify-content: center;
+    gap: 80px;
 
     .header-logo {
       .img-heade-logo {
@@ -56,14 +56,18 @@
         font-size: 25px;
         color: var(--accent3);
       }
-
     }
-    .ham-burger{
+    .ham-burger {
       svg {
         color: var(--white);
         font-size: 25px;
       }
     }
+  }
+
+  .hamburger-menu {
+    display: none;
+    color: white;
   }
 }
 
@@ -86,5 +90,25 @@
 }
 
 @media (max-width: 750px) {
-  
+  .header-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .header-cont {
+      gap: 60px;
+
+      .nav-section {
+        display: none;
+      }
+      .search-div {
+      }
+      .ham-burger {
+      }
+    }
+
+    .hamburger-menu {
+      display: block;
+      color: white;
+    }
+  }
 }
