@@ -3,6 +3,7 @@ import "./ourCoffee.scss";
 import { GiCoffeeBeans } from "react-icons/gi";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Button from "../../componant/Button/Button";
 
 function OurCoffee() {
   useEffect(() => {
@@ -36,7 +37,7 @@ function OurCoffee() {
   return (
     <>
       {/* first section */}
-      <div className="parent parent-our-coffee" data-aos="fade-up">
+      <div className="parent parent-our-coffee bg-img-cover" data-aos="fade-up">
         <div className="cont cont-our-coffee">
           <div className="left-our-coffee">
             <div className="img-coffee-boy bg-img-cover"></div>
@@ -127,6 +128,8 @@ function OurCoffee() {
               customer and will not be repeated for any other customer – while
               using Wings as the supplier.
             </p>
+
+            <Button btntxt="Read More" url="/product-detail"/>
           </div>
           <div className="right-our-coffee">
             <div className="img-coffee-customization bg-img-cover"></div>

@@ -1,6 +1,6 @@
 .parent-our-coffee {
-  //   background-color: #faf4e5;
-  padding:100px 0px 0px 0px;
+  background: url("../../assets/leaf.webp");
+  padding: 100px 0px 0px 0px;
 
   .cont-our-coffee {
     display: flex;
@@ -33,6 +33,11 @@
           right: 0;
           rotate: 10deg;
           border-radius: calc(var(--unit) / 2);
+          transition: var(--trans);
+        }
+
+        &:hover::after {
+          rotate: 0deg;
         }
       }
     }
@@ -331,24 +336,20 @@
     .cont-our-coffee-third {
       flex-direction: column-reverse;
       gap: 20px;
-  
+
       .right-our-coffee {
         width: 100%;
-     
-  
+
         .img-coffee-customization {
-    
           width: 300px;
-       
-  
+
           &::after {
             content: "";
             width: 300px;
-            
           }
         }
       }
-  
+
       .left-our-coffee {
         width: 100%;
         display: flex;
@@ -357,20 +358,18 @@
         justify-content: center;
         text-align: justify;
         gap: 0px;
-        
-  
+
         .two-points {
           display: flex;
           gap: 10px;
 
-  
           .bullet {
             display: flex;
             display: flex;
             align-items: flex-start;
             justify-content: center;
             gap: 20px;
-  
+
             span {
               font-size: 35px;
               color: var(--accent-main);
@@ -423,7 +422,6 @@
   //third section
   .parent-our-coffee-third {
     .cont-our-coffee-third {
-
       .left-our-coffee {
         align-items: flex-start;
         justify-content: flex-start;
