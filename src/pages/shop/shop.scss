@@ -1,6 +1,6 @@
 .shop-parent {
   padding: 100px 0px;
-//  height: 100vh;
+ height: auto;
   background: #faf4e5;
 
   .shop-cont {
@@ -63,20 +63,22 @@
     .bottom-card {
       gap: 20px;
       width: 80%;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex-wrap: wrap;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
 
       .category-box {
-        width: calc(100% / 3 - 20px);
+        width: 100%;
         aspect-ratio: 0.8;
         background: white;
         border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
 
         .top-category {
           width: 100%;
-          height: auto;
+          height: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -88,6 +90,8 @@
         }
 
         .bottom-category {
+          width: 100%;
+          height: 50%;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -103,7 +107,7 @@
           .star {
             padding-bottom: 10px;
             svg{
-              color: var(--accent4);
+              color: var(--accent3);
             }
           }
 
