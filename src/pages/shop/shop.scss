@@ -73,6 +73,9 @@
         aspect-ratio: 0.8;
         background: white;
         border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
 
         .top-category {
           width: 100%;
@@ -103,7 +106,7 @@
           .star {
             padding-bottom: 10px;
             svg{
-              color: var(--accent4);
+              color: var(--accent3);
             }
           }
 
