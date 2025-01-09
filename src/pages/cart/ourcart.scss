@@ -1,0 +1,157 @@
+.ourcart-parent {
+  background: url("../../assets/leaf.webp");
+  background-size: cover;
+  height: 100dvh;
+  margin-top: 60px;
+
+  .ourcart-cont {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+flex-direction: column;
+  
+
+
+.top-cart{
+    display: flex;
+    width: 100%;
+    .product-table {
+        width: 100%;
+  
+        border-collapse: collapse;
+        border-radius: 10px;
+        overflow: hidden;
+  
+        th {
+          background-color: var(--accent3);
+          color: #fff;
+          padding: 12px;
+          font-size: 1.2em;
+        }
+  
+        td {
+          text-align: center;
+          padding: 12px;
+          font-size: 1em;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+        }
+  
+        tr {
+          transition: var(--trans);
+  
+          &:hover {
+            background-color: var(--accent4);
+          }
+        }
+      }
+  
+      .product-image {
+        width: 100px;
+        height: 80px;
+        border-radius: 5px;
+        object-fit: cover;
+      }
+      .counter {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        padding: 10px;
+  
+        .counter-btn {
+          width: 40px;
+          height: 40px;
+          border: none;
+          background-color: var(--accent3);
+          color: var(--white);
+          font-size: 20px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: var(--trans);
+          &:hover {
+            background-color: var(--accent6);
+            color: var(--accent-main);
+          }
+        }
+        .counter-btn:disabled {
+          opacity: 0.5;
+          cursor: not-allowed;
+        }
+        .counter-value {
+          font-size: 20px;
+          font-weight: bold;
+          color: var(--accent-main);
+          text-align: center;
+          width: 40px;
+        }
+        .btn-new {
+          padding: 10px 20px;
+          background-color: var(--accent7);
+          color: var(--white);
+          border-radius: 5px;
+          font-size: 14px;
+  
+          cursor: pointer;
+          transition: var(--trans);
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+  
+      .remove-btn {
+        width: 30px;
+        aspect-ratio: 1;
+        //   padding: 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 50px;
+        transition: var(--trans);
+        background-color: var(--accent-main);
+        svg {
+          color: white;
+          font-size: 18px;
+        }
+        &:hover {
+          background: var(--accent3);
+  
+          svg {
+          }
+        }
+      }
+
+}
+    .bottom-cart{
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            .page-btn {
+                padding: 5px 10px;
+                border: none;
+                background-color: #f0f0f0;
+                cursor: pointer;display: flex;gap:20px;
+
+
+
+                
+              }
+          }
+          
+         
+          
+          .page-btn.active {
+            background-color: var(--accent-main);
+            color: #fff;
+          }
+          
+          .page-btn:hover {
+            background-color: #ddd;
+          }
+    }
+
+
+      
+  }
+}

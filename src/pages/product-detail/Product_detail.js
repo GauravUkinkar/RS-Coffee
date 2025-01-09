@@ -14,7 +14,7 @@ const Product_detail = () => {
   const [selectedImage, setSelectedImage] = useState(images[0]);
   return (
     <div className="product-detail-parent parent">
-      <div className="product-detail-cont cont">
+      <div className="product-detail-cont cont bg-img-cover">
         <div className="product-detail-top">
           {/* Product Images */}
           <div className="product-detail-top-left">
@@ -43,34 +43,37 @@ const Product_detail = () => {
 
           {/* Product-all-Details */}
           <div className="product-detail-top-right">
-            <h2 className="product-title">Your Coffee Name</h2>
+            <h2 className="product-title">A-10 Blend</h2>
             <div className="line"></div>
             <div className="price-box">
               {" "}
               <h3 className="price">Rs. 240</h3>
-              <h3 className="price-old"><s>Rs. 280</s></h3>
+              <h3 className="price-old">
+                <s>Rs. 280</s>
+              </h3>
             </div>
 
             <p className="product-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sint
-              fugit rem mollitia enim debitis ipsum praesentium consectetur et
-              voluptatum!
+            A mixture between a Flowery beans – Ethiopia  and a Fruity beans – Rwanda to create this unique amazing blend.
+              
             </p>
             <div className="line"></div>
-
-            <label htmlFor="plan" className="grind-size">
-              Grind Size:
-            </label>
-            <select id="plan">
-              <option value="">Choose an option</option>
-              <option value="beans">Beans</option>
-              <option value="french-press">French Press</option>
-              <option value="pour-over">Pour Over</option>
-              <option value="espress">Espresso</option>
-              <option value="turkish">Turkish</option>
-            </select>
+            <div className="product-size">
+              <label htmlFor="plan" className="grind-size">
+                Grind Size:
+              </label>
+              <select id="plan">
+                <option value="">Choose an option</option>
+                <option value="beans">Beans</option>
+                <option value="french-press">French Press</option>
+                <option value="pour-over">Pour Over</option>
+                <option value="espress">Espresso</option>
+                <option value="turkish">Turkish</option>
+              </select>
+            </div>
             <div className="line"></div>
-            <label htmlFor="plan" className="weight">
+<div className="product-weight">
+<label htmlFor="plan" className="weight">
               Weight:
             </label>
             <select id="plan">
@@ -79,6 +82,9 @@ const Product_detail = () => {
               <option value="fhundredgram">500g</option>
               <option value="onekilo">1kg</option>
             </select>
+</div>
+            
+           
             <div className="line"></div>
 
             <div className="counter">
@@ -121,24 +127,36 @@ const Product_detail = () => {
           </div>
           {activeTab === "details" && (
             <p className="details">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
-              blanditiis cum quas voluptatibus ipsum architecto quo magni soluta
-              laudantium nam quae nisi neque repellat maiores, quam sed, impedit
-              veniam laboriosam aut iure nemo sint, obcaecati earum.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
+              eaque perferendis consectetur voluptatibus quam quidem eligendi
+              aperiam perspiciatis vitae accusantium laboriosam totam
+              repudiandae unde, dolore obcaecati! Laudantium quae quos enim
+              culpa obcaecati, amet hic, delectus tenetur dolorem illum beatae
+              sint et mollitia dicta nesciunt. Enim magni dicta numquam sunt
+              maxime?
             </p>
           )}
           {activeTab === "additional" && (
             <p className="details">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Exercitationem laborum, impedit excepturi hic assumenda quod
-              officia architecto recusandae ratione ipsa!
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
+              eaque perferendis consectetur voluptatibus quam quidem eligendi
+              aperiam perspiciatis vitae accusantium laboriosam totam
+              repudiandae unde, dolore obcaecati! Laudantium quae quos enim
+              culpa obcaecati, amet hic, delectus tenetur dolorem illum beatae
+              sint et mollitia dicta nesciunt. Enim magni dicta numquam sunt
+              maxime? Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Nostrum eaque perferendis consectetur voluptatibus quam quidem
+              eligendi aperiam perspiciatis vitae accusantium laboriosam totam
+              repudiandae unde, dolore obcaecati! Laudantium quae quos enim
+              culpa obcaecati, amet hic, delectus tenetur dolorem illum beatae
+              sint et mollitia dicta nesciunt. Enim magni dicta numquam sunt
+              maxime?
             </p>
           )}
         </div>
-
-        {/* product swiper added Here */}
-        <Home_product title="Related Products" />
       </div>
+      {/* product swiper added Here */}
+      <Home_product title="Related Products" />
     </div>
   );
 };

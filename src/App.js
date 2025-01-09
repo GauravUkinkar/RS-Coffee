@@ -10,6 +10,7 @@ import PageNotFound from "./pages/page-not-found/PageNotFound";
 import Header from "./componant/header/Header";
 import ScrollToTop from "./Others/ScrollToTop";
 import ScrollToTopButton from "./Others/ScrollToTopButton";
+import Our_cart from "./pages/cart/Our_cart";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/shop" element={<Shop />} />
         <Route path="/product-detail" element={<Product_detail /> } />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/cart" element={<Our_cart /> } />
         <Route path="/*" element={<PageNotFound />} />
 
       </Routes>
