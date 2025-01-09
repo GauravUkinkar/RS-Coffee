@@ -4,6 +4,7 @@ import { SlLocationPin } from "react-icons/sl";
 import { LiaMailBulkSolid } from "react-icons/lia";
 import { MdOutlinePhone } from "react-icons/md";
 import { FaArrowRightLong } from "react-icons/fa6";
+import Button from "../../componant/Button/Button";
 function Contact() {
   const data = [
     {
@@ -67,12 +68,9 @@ function Contact() {
                   </div>
                   <textarea placeholder="Message" rows="4" cols="50"></textarea>
                   <div class="btn-div">
-                    <button type="submit" className="btn">
-                      Submit
-                      <div className="icon">
-                        <FaArrowRightLong />
-                      </div>
-                    </button>
+                    
+                     <Button type="submit" btntxt="Submit"/>
+                
                   </div>
                 </form>
               </div>

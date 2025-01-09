@@ -63,6 +63,7 @@
             left: 25%;
             right: 25%;
             padding: 10px 20px;
+            font-size:14px;
           }
           &:hover {
             .btn-n {
@@ -106,12 +107,13 @@
           .product-heading,
           .product-price {
             color: var(--accent5);
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 500;
             // font-family: "Spicy Rice", serif;
           }
           .product-desc {
             color: var(--accent5);
+            font-size:14px;
           }
           .product-price {
           }
