@@ -5,6 +5,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { VscCoffee } from "react-icons/vsc";
+import Button from "../Button/Button";
 
 const Hero = () => {
   useEffect(() => {
@@ -23,15 +24,8 @@ const Hero = () => {
             Roast coffee with aviation precision. Roast coffee with aviation
             precision. Roast coffee with aviation precision.
           </p>
-          <Link to="#" className="btn" data-aos="zoom-in" data-aos-delay="600">
-            <div className="icon-new">
-              <VscCoffee />
-            </div>
-            Shop Now
-            <div className="icon">
-              <FaArrowRightLong />
-            </div>
-          </Link>
+        {/* Button aDD Here */}
+        <Button  url="/about" btntxt="Read More"/>
         </div>
         <div className="hero-right bg-img-contain" data-aos="fade-up">
           <div className="animation">

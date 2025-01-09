@@ -36,7 +36,7 @@ const Home_gallery = () => {
 
   return (
     <div className="home-gallery-parent parent bg-img-cover">
-      <div className="home-gallery-cont cont" data-aos="fade-right">
+      <div className="home-gallery-cont cont" data-aos="fade-up">
         <h2>Our Gallery</h2>
       </div>
       <div className="images-box" data-aos="fade-up">

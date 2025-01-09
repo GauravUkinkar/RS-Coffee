@@ -5,6 +5,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { VscCoffee } from "react-icons/vsc";
+import Button from "../Button/Button";
 
 const Home_about = () => {
   useEffect(() => {
@@ -52,19 +53,7 @@ const Home_about = () => {
               freshest possible coffee to small markets that normally would not
               have access to such a premium quality product.
             </p>
-            <Link
-              className="btn"
-              data-aos="fade-in"
-              data-aos-delay="1200"
-            >
-               <div className="icon-new">
-                            <VscCoffee />
-                          </div>
-              Read More{" "}
-              <div className="icon">
-                <FaArrowRightLong />
-              </div>
-            </Link>
+            <Button  url="/about" btntxt="Read More"/>
           </div>
         </div>
       </div>

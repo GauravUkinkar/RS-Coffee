@@ -3,14 +3,15 @@ import "./product_detail.scss";
 import img1 from "../../assets/gallery/coffee.webp";
 import img2 from "../../assets/gallery/coffee1.webp";
 import img3 from "../../assets/gallery/coffee2.webp";
+import img4 from "../../assets/gallery/coffee3.webp";
+import img5 from "../../assets/gallery/coffee6.webp";
 import Home_product from "../../componant/home-product/Home_product";
 
 const Product_detail = () => {
-  const images = [img1, img2, img3];
-  const [counter, setCounter] = useState(0);
+  const images = [img1, img2, img3, img4, img5];
+  const [counter, setCounter] = useState(1);
   const [activeTab, setActiveTab] = useState("details");
-  const [selectedImage, setSelectedImage] = useState(images[0]); // Default to the first image
-
+  const [selectedImage, setSelectedImage] = useState(images[0]);
   return (
     <div className="product-detail-parent parent">
       <div className="product-detail-cont cont">
@@ -20,7 +21,9 @@ const Product_detail = () => {
             <div className="product-box-left">
               {images.map((image, index) => (
                 <div
-                  className="product-box-l-top bg-img-cover"
+                  className={`product-box-l-top bg-img-contain ${
+                    selectedImage === image ? "active" : ""
+                  }`}
                   key={index}
                   style={{
                     backgroundImage: `url(${image})`,
@@ -42,7 +45,12 @@ const Product_detail = () => {
           <div className="product-detail-top-right">
             <h2 className="product-title">Your Coffee Name</h2>
             <div className="line"></div>
-            <h3 className="price">Rs. 140 - 580.</h3>
+            <div className="price-box">
+              {" "}
+              <h3 className="price">Rs. 240</h3>
+              <h3 className="price-old"><s>Rs. 280</s></h3>
+            </div>
+
             <p className="product-desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sint
               fugit rem mollitia enim debitis ipsum praesentium consectetur et
@@ -51,7 +59,7 @@ const Product_detail = () => {
             <div className="line"></div>
 
             <label htmlFor="plan" className="grind-size">
-             Grind Size:
+              Grind Size:
             </label>
             <select id="plan">
               <option value="">Choose an option</option>
@@ -77,6 +85,7 @@ const Product_detail = () => {
               <button
                 className="counter-btn"
                 onClick={() => setCounter(counter - 1)}
+                disabled={counter === 1}
               >
                 -
               </button>
@@ -127,9 +136,8 @@ const Product_detail = () => {
           )}
         </div>
 
-
         {/* product swiper added Here */}
-        <Home_product title="Related Products"/>
+        <Home_product title="Related Products" />
       </div>
     </div>
   );

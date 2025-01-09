@@ -3,6 +3,7 @@ import "./home-third_section.scss";
 import { GiCoffeeBeans } from "react-icons/gi";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { BiSolidCoffeeBean } from "react-icons/bi";
 
 const Home_third_section = () => {
   useEffect(() => {
@@ -66,9 +67,9 @@ const Home_third_section = () => {
                   <div className="heading">We source the best coffee for you</div>
                   <p className="sub-heading">
                     <ul className="pointer">
-                      <li>Brazil – Natural – Cupping Score 84+</li>
-                      <li>Rwanda – Fully Washed – Cupping Score 86+</li>
-                      <li>
+                      <li className="list-icon"><div className="icons"><BiSolidCoffeeBean /></div>Brazil – Natural – Cupping Score 84+</li>
+                      <li className="list-icon"><div className="icons"><BiSolidCoffeeBean /></div>Rwanda – Fully Washed – Cupping Score 86+</li>
+                      <li className="list-icon"><div className="icons"><BiSolidCoffeeBean /></div> 
                         Panama – Natural, Maceration and Fully Washed – Cupping
                         score 88+ and 90+
                       </li>

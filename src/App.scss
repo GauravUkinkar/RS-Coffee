@@ -5,6 +5,7 @@
   --accent4: #efdfc5;
   --accent5: #794f2e;
   --accent6: #f5ede7;
+  --accent7: #914800;
   --black: #000003;
   --white: #fff;
   --unit: 20px;
@@ -69,73 +70,7 @@ body {
   overflow-x: hidden;
   width: 100%;
 }
-.btn {
-  padding: 10px 35px;
-  width: fit-content;
-  color: var(--black);
-  position: relative;
-  background: transparent;
-  overflow: hidden;
-  text-align: center;
-  justify-content: center !important;
-  cursor: pointer;
-  z-index: 1;
-  transition: var(--trans);
-  display: flex;
-  gap: 5px;
-  align-items: center;
 
-  .icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 2px;
-
-    svg {
-      transition: var(--trans);
-    }
-  }
-  .icon-new {
-    animation: loopAnimations 5s infinite ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid rgba(255, 0, 0, 0);
-    svg {
-      transition: var(--trans);
-      // &:hover{
-      //   font-size:20px;
-      // }
-    }
-  }
-
-  &:hover {
-    color: rgb(65, 39, 0);
-
-    .icon svg {
-      color: var(--accent2);
-      transform: rotate(-30deg);
-    }
-    .icon-new svg {
-      font-size: 18px;
-    }
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url("./assets/readmore.avif");
-    display: flex;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    z-index: -1;
-  }
-}
 
 .bg-img-cover {
   background-size: cover !important;
@@ -152,18 +87,4 @@ body {
   width: 100%;
   background: rgba(0, 0, 0, 0.116);
   height: 1px;
-}
-@keyframes loopAnimations {
-  0% {
-    transform: scale(1) rotate(0deg);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.09) rotate(5deg);
-    opacity: 0.9;
-  }
-  100% {
-    transform: scale(1) rotate(0deg);
-    opacity: 1;
-  }
 }

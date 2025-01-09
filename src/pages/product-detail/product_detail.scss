@@ -27,11 +27,18 @@
           gap: 5px;
 
           .product-box-l-top {
-            height: 140px;
+            height: 40px;
             display: flex;
             flex-direction: column;
             border-radius: 5px;
             width: 100%;
+            opacity: 0.3;
+            transition: var(--trans);
+            &:hover,
+            &:active,
+            &.active {
+              opacity: 1;
+            }
           }
         }
         .product-box-right {
@@ -50,14 +57,24 @@
           margin: 0px;
           line-height: 20px;
         }
-        .price {
-          font-size: 22px;
-
-          font-family: "Roboto Serif", serif;
-          font-weight: 500;
-          margin: 0px;
-          line-height: 20px;
+        .price-box {
+          display: flex;
+          gap: 20px;
+          .price,
+          .price-old {
+            font-size: 22px;
+            color: var(--accent7);
+            font-family: "Roboto Serif", serif;
+            font-weight: 500;
+            margin: 0px;
+            line-height: 20px;
+          }
+          .price-old {
+            font-size: 18px;
+            color: red;
+          }
         }
+
         .grind-size,
         .weight {
           padding: 20px 10px;
@@ -111,6 +128,10 @@
               color: var(--accent-main);
             }
           }
+          .counter-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+          }
           .counter-value {
             font-size: 20px;
             font-weight: bold;
@@ -120,7 +141,7 @@
           }
           .btn-new {
             padding: 10px 20px;
-            background-color: var(--accent-main);
+            background-color: var(--accent7);
             color: var(--white);
             border-radius: 5px;
             font-size: 14px;
