@@ -6,10 +6,25 @@ import "aos/dist/aos.css";
 import coffee3 from "../../assets/product/Wings-9-scaled.webp";
 import coffee4 from "../../assets/product/Wings-10-scaled.webp";
 import "../../componant/home-product/home-product.scss";
+import { IoSearchOutline } from "react-icons/io5";
+import img1 from "../../assets/coffee.png";
+import { IoMdStar } from "react-icons/io";
+import { FcLike } from "react-icons/fc";
+import { BsCart } from "react-icons/bs";
+import { IoIosHeart } from "react-icons/io";
 
 function Shop() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const swiperRef = useRef(null);
+
+  const [likeBtn, setLikeBtn] = useState(false);
+
+  const toggleLike = (index) => {
+    setLikeBtn((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  };
 
   useEffect(() => {
     AOS.init({ duration: 1200 });
@@ -17,31 +32,55 @@ function Shop() {
 
   const products = [
     {
-      id: 1,
-      img1: coffee3,
-      img2: coffee4,
-      product_title: "A-10 Blend",
-      product_desc: "Coffee",
-      product_price: "42 – ر.ق140",
-      product_detail: "link1",
+      product_name: "A-10 Blend",
+      product_price: "250 ر.",
+      product_img: img1,
     },
     {
-      id: 2,
-      img1: coffee3,
-      img2: coffee4,
-      product_title: "Brazil – Diamond",
-      product_desc: "Coffee",
-      product_price: "42 – ر.ق140",
-      product_detail: "link2",
+      product_name: "Brazil – Diamond",
+      product_price: "250 ر.",
+      product_img: img1,
     },
     {
-      id: 3,
-      img1: coffee3,
-      img2: coffee4,
-      product_title: "Decaf Coffee",
-      product_desc: "Coffee",
-      product_price: "45 – ر.ق150",
-      product_detail: "link3",
+      product_name: "Decaf Coffee",
+      product_price: "250 ر.",
+      product_img: img1,
+    },
+    {
+      product_name: "Drip Solo Bag",
+      product_price: "250 ر.",
+      product_img: img1,
+    },
+    {
+      product_name: "Ethiopia – Guji",
+      product_price: "250 ر.",
+      product_img: img1,
+    },
+    {
+      product_name: "Honduras Coffee",
+      product_price: "250 ر.",
+      product_img: img1,
+    },
+  ];
+
+  const category = [
+    {
+      category: "Category 2",
+    },
+    {
+      category: "Category 2",
+    },
+  ];
+
+  const filters = [
+    {
+      category: "Category",
+    },
+    {
+      category: "Price",
+    },
+    {
+      category: "Discount",
     },
   ];
 
@@ -51,72 +90,83 @@ function Shop() {
         <div className="cont shop-cont">
           <div className="shop-label" data-aos="fade-down">
             <div className="dropdown dropdown-main">
-              <label>Sort By </label>
-              <button
-                className="btn-secondary dropdown-toggle dropdown-btn"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+              <div className="search-field">
+                <input type="text" placeholder="Search" />
+                <span className="search-icon-shop">
+                  <IoSearchOutline />
+                </span>
+              </div>
+              {filters.map((item, index) => (
+                <button
+                  className="btn-secondary dropdown-toggle dropdown-btn"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  {item.category}
+                </button>
+              ))}
+              <ul
+                className="dropdown-menu"
+                aria-labelledby="dropdownMenuButton1"
               >
-                Dropdown button
-              </button>
-              <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Action
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Another action
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Something else here
-                  </a>
-                </li>
+                {category.map((item, index) => (
+                  <li key={index}>
+                    <a className="dropdown-item" href="#">
+                      {item.category}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
 
           {/* Cards */}
-          <div className="bottom-card">
+          <div className="bottom-card" data-aos="fade-down">
             {products.map((item, index) => (
-              <Link
-                key={item.id}
-                to={item.product_detail}
-                className="swiper-box"
-                onMouseEnter={() => setHoveredIndex(index)}
-                onMouseLeave={() => setHoveredIndex(null)}
-                data-aos="fade-up"
-              >
-                <div
-                  className="top-box"
-                  onMouseEnter={() => swiperRef.current?.swiper.autoplay.stop()}
-                  onMouseLeave={() =>
-                    swiperRef.current?.swiper.autoplay.start()
-                  }
-                >
-                  <div
-                    className="coffee-image bg-img-cover"
-                    style={{
-                      backgroundImage: `url(${
-                        hoveredIndex === index ? item.img2 : item.img1
-                      })`,
-                    }}
-                  ></div>
-                  <Link to="/about" className="btn-n">
-                    Add To Cart
-                  </Link>
+              <div class="category-box">
+                <div class="top-category">
+                  {" "}
+                  <img src={item.product_img} alt="" />
                 </div>
-                <div className="bottom-box">
-                  <div className="product-heading">{item.product_title}</div>
-                  <p className="product-desc">{item.product_desc}</p>
-                  <div className="product-price">{item.product_price}</div>
+                <div class="bottom-category">
+                  <h3>{item.product_name}</h3>
+                  <span>{item.product_price}</span>
+                  <div class="star">
+                    <span>
+                      <IoMdStar />
+                    </span>
+                    <span>
+                      <IoMdStar />
+                    </span>
+                    <span>
+                      <IoMdStar />
+                    </span>
+                    <span>
+                      <IoMdStar />
+                    </span>
+                  </div>
+                  <div className="addtocart">
+                    <Link class="addto">
+                      <span>
+                        <BsCart />
+                      </span>
+                      <span style={{ fontSize: "20px" }}>Add To Cart</span>
+                    </Link>
+                    <span
+                      onClick={() => toggleLike(index)}
+                      style={{ cursor: "pointer" }}
+                    >
+                      {likeBtn[index] ? (
+                        <FcLike />
+                      ) : (
+                        <IoIosHeart style={{ color: "var(--accent3)" }} />
+                      )}
+                    </span>
+                  </div>
                 </div>
-              </Link>
+              </div>
             ))}
           </div>
         </div>
