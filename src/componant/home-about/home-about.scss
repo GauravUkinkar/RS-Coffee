@@ -32,7 +32,14 @@
           right: 0;
           rotate: 10deg;
           border-radius: calc(var(--unit) / 2);
+          transition: var(--trans);
         }
+
+        &:hover::after {
+          rotate:0deg;
+        }
+     
+
       }
     }
     .home-about-right {

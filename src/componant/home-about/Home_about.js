@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { VscCoffee } from "react-icons/vsc";
 
 const Home_about = () => {
   useEffect(() => {
@@ -56,6 +57,9 @@ const Home_about = () => {
               data-aos="fade-in"
               data-aos-delay="1200"
             >
+               <div className="icon-new">
+                            <VscCoffee />
+                          </div>
               Read More{" "}
               <div className="icon">
                 <FaArrowRightLong />

@@ -35,9 +35,7 @@
         color: var(--white);
         font-size: 68px;
         font-weight: 600;
-        line-height: 64
-        
-        px;
+        line-height: 64px;
         font-family: "Roboto Serif", serif;
       }
 
@@ -52,7 +50,7 @@
       background: url("../../assets/hero-coffee.png");
       background-size: cover;
       background-position: center;
-      animation: loopAnimation 5s infinite ease-in-out; /* Apply looping animation */
+      animation: loopAnimation 5s infinite ease-in-out;
     }
 
     .heading-text {

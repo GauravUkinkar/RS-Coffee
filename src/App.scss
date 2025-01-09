@@ -3,8 +3,8 @@
   --accent-text: #514242;
   --accent3: #dcb287;
   --accent4: #efdfc5;
-  --accent5: #794F2E;
-  --accent6:#F5EDE7;
+  --accent5: #794f2e;
+  --accent6: #f5ede7;
   --black: #000003;
   --white: #fff;
   --unit: 20px;
@@ -95,6 +95,19 @@ body {
       transition: var(--trans);
     }
   }
+  .icon-new {
+    animation: loopAnimations 5s infinite ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 0, 0, 0);
+    svg {
+      transition: var(--trans);
+      // &:hover{
+      //   font-size:20px;
+      // }
+    }
+  }
 
   &:hover {
     color: rgb(65, 39, 0);
@@ -102,6 +115,9 @@ body {
     .icon svg {
       color: var(--accent2);
       transform: rotate(-30deg);
+    }
+    .icon-new svg {
+      font-size: 18px;
     }
   }
 
@@ -132,9 +148,22 @@ body {
   background-size: contain !important;
 }
 
-
-.line{
-  width:100%;
-  background:rgba(0, 0, 0, 0.116);
-  height:1px;
+.line {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.116);
+  height: 1px;
+}
+@keyframes loopAnimations {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.09) rotate(5deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
 }
