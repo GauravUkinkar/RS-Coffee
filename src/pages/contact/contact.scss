@@ -2,7 +2,7 @@
   background: #ece8dd;
   padding: 30px 10px;
   background: url("../../assets/bg-image-contact.jpg");
-  margin-top:60px;
+  margin-top: 60px;
   .main-cont {
     .contact-parent {
       .contact-cont {
@@ -75,6 +75,7 @@
           gap: 10px;
           p {
             text-align: center;
+            max-width: 80ch;
           }
 
           .form {
@@ -95,7 +96,6 @@
               border: 1px solid rgba(0, 0, 0, 0.4);
               border-radius: 5px;
               background: #ece8dd;
-           
               outline: none;
             }
             .btn-div {
@@ -105,16 +105,108 @@
             }
           }
         }
-        // .contact-right {
-        //   width: 50%;
+      }
+    }
+  }
+}
 
-        //   .img-contact {
-        //     background: url("../../assets/boy_coffee.jpg");
-        //     width: 400px;
-        //     aspect-ratio: 3/4;
-        //     border-radius: 10px;
-        //   }
-        // }
+@media (max-width: 1000px) {
+  .main-parent {
+    .main-cont {
+      .contact-parent-form {
+        .contact-cont-form {
+          .contact-left {
+            .form {
+              width: 90%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .main-parent {
+    .main-cont {
+      .contact-parent {
+        .contact-cont {
+          width: 100%;
+          gap: 0px;
+          p {
+            text-align: center;
+          }
+          .contact-company-info {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            .location-main-box {
+              width: 100%;
+              border-right: none;
+              border-bottom: 1px dashed var(--accent-main);
+              &:nth-child(3) {
+                border-bottom: 1px dashed var(--accent-main);
+              }
+
+              .contact-icons {
+                font-size: 36px;
+                font-weight: 700;
+                color: var(--accent-text);
+              }
+              h4 {
+                font-size: 22px;
+                font-weight: 500;
+                color: var(--accent-text);
+              }
+              p {
+                font-weight: 300;
+                text-align: center;
+                color: var(--accent-text);
+              }
+            }
+
+            .location-box {
+              width: 80%;
+            }
+          }
+        }
+      }
+
+      .contact-parent-form {
+        .contact-cont-form {
+          .contact-left {
+            .form {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .main-parent {
+    .main-cont {
+      .contact-parent-form {
+        padding: 20px 0px;
+        .contact-cont-form {
+          .contact-left {
+            padding: 10px;
+            gap: 0px;
+            p {
+              max-width: 90ch;
+            }
+            .form {
+              width: 100%;
+              .name-last {
+                flex-direction: column;
+              }
+            }
+          }
+        }
       }
     }
   }

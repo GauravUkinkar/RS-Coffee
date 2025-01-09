@@ -35,16 +35,18 @@ function Header() {
               <BsCart />
             </span>
           </div>
+          <div class="hamburger-menu" onClick={() => setNavOpen(!navOpen)}>
+          <span className="ham-burger">
+            {" "}
+            <RxHamburgerMenu className="ham-burger-icon" />
+          </span>
         </div>
-        <div class="hamburger-menu" onClick={() => setNavOpen(!navOpen)}>
-          <div className="ham-burger">
-            <RxHamburgerMenu />
-          </div>
         </div>
+       
       </div>
 
       {/* mobile nav */}
-      <div className={`mob-nav ${navOpen ? "active" : ""}`}>
+      <div className={navOpen ? "mob-nav active" : "mob-nav"}>
         <Link to="/" onClick={handleNavClose}>
           Home
         </Link>
