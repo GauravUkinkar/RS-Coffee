@@ -54,8 +54,8 @@ const Product_detail = () => {
             </div>
 
             <p className="product-desc">
-            A mixture between a Flowery beans – Ethiopia  and a Fruity beans – Rwanda to create this unique amazing blend.
-              
+              A mixture between a Flowery beans – Ethiopia and a Fruity beans –
+              Rwanda to create this unique amazing blend.
             </p>
             <div className="line"></div>
             <div className="product-size">
@@ -72,19 +72,18 @@ const Product_detail = () => {
               </select>
             </div>
             <div className="line"></div>
-<div className="product-weight">
-<label htmlFor="plan" className="weight">
-              Weight:
-            </label>
-            <select id="plan">
-              <option value="">Choose an option</option>
-              <option value="tfgram">250g</option>
-              <option value="fhundredgram">500g</option>
-              <option value="onekilo">1kg</option>
-            </select>
-</div>
-            
-           
+            <div className="product-weight">
+              <label htmlFor="plan" className="weight">
+                Weight:
+              </label>
+              <select id="plan">
+                <option value="">Choose an option</option>
+                <option value="tfgram">250g</option>
+                <option value="fhundredgram">500g</option>
+                <option value="onekilo">1kg</option>
+              </select>
+            </div>
+
             <div className="line"></div>
 
             <div className="counter">
