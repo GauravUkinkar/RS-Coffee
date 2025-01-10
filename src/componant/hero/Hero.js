@@ -1,10 +1,7 @@
 import React, { useEffect } from "react";
 import "./hero.scss";
-import { Link } from "react-router-dom";
-import { FaArrowRightLong } from "react-icons/fa6";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { VscCoffee } from "react-icons/vsc";
 import Button from "../Button/Button";
 
 const Hero = () => {

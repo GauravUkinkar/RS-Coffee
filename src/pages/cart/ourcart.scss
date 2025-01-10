@@ -33,34 +33,26 @@
             font-size: 16px;
             font-weight: 500;
             border-bottom: 1px solid rgb(31, 1, 1);
-
-            // align-items: center;
-            // text-align: center;
-
-            &:nth-child(1) {
-              width: 250px;
-              text-align: center;
-            }
-            &:nth-child(3) {
-              text-align: center;
-            }
+            text-align: center;
+          }
+          .table_data {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.144);
           }
 
           td {
-            // text-align: center;
+            text-align: center;
             padding: 12px;
             font-size: 16px;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.144);
 
             &:nth-child(1) {
               display: flex;
-              // align-items: center;
-              // justify-content: center;
+              align-items: center;
+              justify-content: flex-start;
               gap: 10px;
             }
           }
 
-          tr {
+          .table_data {
             transition: var(--trans);
 
             &:hover {
@@ -301,7 +293,8 @@
             .second-drop {
               gap: 10px;
               display: flex;
-              align-items: center;justify-content: center;
+              align-items: center;
+              justify-content: center;
               select {
                 border: 1px solid #ccc;
                 border-radius: 5px;
@@ -310,12 +303,12 @@
                 color: #333;
                 background-color: #fff;
               }
-    
+
               select:hover {
                 border-color: var(--accent3);
                 background-color: var(--accent6);
               }
-    
+
               select:focus {
                 border-color: var(--accent5);
               }
@@ -353,7 +346,7 @@
     }
   }
 }
-@media only screen and (max-width:450px){
+@media only screen and (max-width: 450px) {
   .ourcart-parent {
     .ourcart-cont {
       .cart-left {
@@ -377,19 +370,16 @@
         }
         .cart-mobile-right {
           width: 100%;
-          
         }
-        .close{
+        .close {
           position: absolute;
-          right:10px;
-          top:10px;
+          right: 10px;
+          top: 10px;
           background: var(--white);
-          svg{
-            color:var(--accent-main);
+          svg {
+            color: var(--accent-main);
           }
-          
         }
-        
       }
     }
   }

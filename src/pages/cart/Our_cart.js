@@ -107,7 +107,7 @@ const Our_cart = () => {
               </thead>
               <tbody>
                 {currentItems.map((item) => (
-                  <tr key={item.id}>
+                  <tr className="table_data" key={item.id}>
                     <td>
                       <img
                         src={item.image}
@@ -167,51 +167,53 @@ const Our_cart = () => {
             </div>
           </div>
         </div>
-        <div className="cart-mobile">
-          <div className="cart-mobile-left">
-            <img src={img1} />
-          </div>
+        {cartItems.map((items) => (
+          <div className="cart-mobile">
+            <div className="cart-mobile-left">
+              <img src={img1} />
+            </div>
 
-          <div className="cart-mobile-right">
-            <div className="mobile-title">Lorem, ipsum.</div>
-            <p className="product-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <div className="drop-down-box">
-              <div className="first-drop">
-                <label htmlFor="plan" className="weight">
-                  Weight:
-                </label>
-                <select id="plan">
-                  <option value="tfgram">250g</option>
-                  <option value="fhundredgram">500g</option>
-                  <option value="onekilo">1kg</option>
-                </select>
+            <div className="cart-mobile-right">
+              <div className="mobile-title">Lorem, ipsum.</div>
+              <p className="product-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div className="drop-down-box">
+                <div className="first-drop">
+                  <label htmlFor="plan" className="weight">
+                    Weight:
+                  </label>
+                  <select id="plan">
+                    <option value="tfgram">250g</option>
+                    <option value="fhundredgram">500g</option>
+                    <option value="onekilo">1kg</option>
+                  </select>
+                </div>
+                <div className="second-drop">
+                  <label htmlFor="plan" className="weight">
+                    Qty:
+                  </label>
+                  <select id="plan">
+                    <option value="">1</option>
+                    <option value="product2">2</option>
+                    <option value="product3">3</option>
+                    <option value="porduct4">4</option>
+                    <option value="product5">5</option>
+                  </select>
+                </div>
               </div>
-              <div className="second-drop">
-                <label htmlFor="plan" className="weight">
-                  Qty:
-                </label>
-                <select id="plan">
-                  <option value="">1</option>
-                  <option value="product2">2</option>
-                  <option value="product3">3</option>
-                  <option value="porduct4">4</option>
-                  <option value="product5">5</option>
-                </select>
+              <div className="line"></div>
+              <div className="product-price">
+                $120
+                <s className="close-price">$180</s>
               </div>
+              <div className="product-price-save">You save $60</div>
             </div>
-            <div className="line"></div>
-            <div className="product-price">
-              $120
-              <s className="close-price">$180</s>
+            <div className="close">
+              <IoClose />
             </div>
-            <div className="product-price-save">You save $60</div>
           </div>
-          <div className="close">
-            <IoClose />
-          </div>
-        </div>
+        ))}
 
         {/* Right side order cart */}
         <div className="cart-right">

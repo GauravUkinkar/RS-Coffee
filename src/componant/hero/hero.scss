@@ -74,7 +74,7 @@
 @media only screen and (max-width: 1000px) {
   .hero-parent {
     height: 100%;
-    padding: 50px 0px;
+    padding: 70px 0px;
 
     .hero-cont {
       flex-direction: column-reverse;
@@ -105,9 +105,9 @@
       }
 
       .heading-text {
-        top: 30%;
+        top: 40%;
         left: 40%;
-        font-size: 150px;
+        font-size: 150px;line-height: 150px;
       }
     }
   }
