@@ -23,7 +23,7 @@ function Header() {
           <div class="nav-section">
             <Link to="/">Home</Link>
             <Link to="/our-coffee">Our Coffee</Link>
-            <Link to="/shop">Shop</Link>
+            <Link to="/new-shop">Shop</Link>
             <Link to="/contact">Contact</Link>
           </div>
           <div class="search-div">
@@ -54,7 +54,7 @@ function Header() {
         <Link to="/our-coffee" onClick={handleNavClose}>
           Our Coffee
         </Link>
-        <Link to="/shop" onClick={handleNavClose}>
+        <Link to="/new-shop" onClick={handleNavClose}>
           Shop
         </Link>
         <Link to="/contact" onClick={handleNavClose}>

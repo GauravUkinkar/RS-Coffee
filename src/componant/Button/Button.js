@@ -6,7 +6,7 @@ import "./Button.scss"
 const Button = ({url, btntxt}) => {
   return (
     <>
-        <Link to={url} className="btn" data-aos="zoom-in" data-aos-delay="600">
+        <Link to={url} className="btn">
             <div className="icon-new">
               <VscCoffee />
             </div>
