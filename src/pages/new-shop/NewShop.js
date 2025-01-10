@@ -252,7 +252,7 @@ function NewShop() {
                     {toggleItem.grid && (
                       <>
                         {product.map((item, index) => (
-                          <Link class="card" key={index} to="/product">
+                          <Link class="card" key={index} to="/product-detail">
                             <div class="image">
                               <div
                                 class="img  bg-img-cover"
@@ -274,7 +274,7 @@ function NewShop() {
                     {toggleItem.verticle && (
                       <>
                         {product.map((item, index) => (
-                          <Link class="card verticle_card" key={index} to="/product">
+                          <Link class="card verticle_card" key={index} to="/product-detail">
                             <div class="image">
                               <div
                                 class="img  bg-img-cover"
