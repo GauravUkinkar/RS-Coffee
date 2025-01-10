@@ -14,7 +14,6 @@
     }
 
     .swiper-slide {
-      /* General styling for slides */
       text-align: center;
       font-size: 18px;
       background: #fff;
@@ -145,8 +144,8 @@
     }
   }
   .swiper-pagination-bullet ,.swiper-pagination-bullet-active{
-    width: 30px;
-    height:4px;
+    width: 25px;
+    height:3px;
     border-radius: 10px;
     background: var(--accent-main);
   }

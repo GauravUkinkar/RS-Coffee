@@ -32,7 +32,8 @@ function Header() {
               <IoSearchOutline />
             </span>
             <span>
-              <BsCart />
+              <Link to="/cart"><BsCart /></Link>
+              
             </span>
           </div>
           <div class="hamburger-menu" onClick={() => setNavOpen(!navOpen)}>

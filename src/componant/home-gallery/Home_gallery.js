@@ -9,7 +9,6 @@ import img6 from "../../assets/gallery/coffee6.webp";
 import img7 from "../../assets/gallery/coffee7.webp";
 import img8 from "../../assets/gallery/coffee8.webp";
 import { IoClose } from "react-icons/io5";
-import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Home_gallery = () => {
@@ -25,21 +24,14 @@ const Home_gallery = () => {
     setSelectedImage(null);
   };
 
-  // Initialize AOS
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Animation duration
-      easing: "ease-in-out", // Easing for animations
-      once: true, // Trigger animations only once
-    });
-  }, []);
+;
 
   return (
     <div className="home-gallery-parent parent bg-img-cover">
-      <div className="home-gallery-cont cont" data-aos="fade-up">
+      <div className="home-gallery-cont cont">
         <h2>Our Gallery</h2>
       </div>
-      <div className="images-box" data-aos="fade-up">
+      <div className="images-box">
         {images.map((image, index) => (
           <div
             key={index}
