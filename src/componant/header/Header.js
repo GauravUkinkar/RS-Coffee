@@ -32,17 +32,18 @@ function Header() {
               <IoSearchOutline />
             </span>
             <span>
-              <Link to="/cart"><BsCart /></Link>
+              <Link to="/cart">
+                <BsCart />
+              </Link>
             </span>
+            <div class="hamburger-menu" onClick={() => setNavOpen(!navOpen)}>
+              <span className="ham-burger">
+                {" "}
+                <RxHamburgerMenu className="ham-burger-icon" />
+              </span>
+            </div>
           </div>
-          <div class="hamburger-menu" onClick={() => setNavOpen(!navOpen)}>
-          <span className="ham-burger">
-            {" "}
-            <RxHamburgerMenu className="ham-burger-icon" />
-          </span>
         </div>
-        </div>
-       
       </div>
 
       {/* mobile nav */}
