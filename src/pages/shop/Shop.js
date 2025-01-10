@@ -12,10 +12,13 @@ import { IoMdStar } from "react-icons/io";
 import { FcLike } from "react-icons/fc";
 import { BsCart } from "react-icons/bs";
 import { IoIosHeart } from "react-icons/io";
+import { TbCategory } from "react-icons/tb";
 
 function Shop() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const swiperRef = useRef(null);
+
+  const [bottomNav, setBottmNav] = useState(false)
 
   const [likeBtn, setLikeBtn] = useState(false);
 
@@ -125,7 +128,7 @@ function Shop() {
           {/* Cards */}
           <div className="bottom-card" data-aos="fade-down">
             {products.map((item, index) => (
-              <div class="category-box">
+              <Link class="category-box">
                 <div class="top-category">
                   {" "}
                   <img src={item.product_img} alt="" />
@@ -152,7 +155,7 @@ function Shop() {
                       <span>
                         <BsCart />
                       </span>
-                      <span style={{ fontSize: "20px" }}>Add To Cart</span>
+                      <span className="add-to-name">Add To Cart</span>
                     </Link>
                     <span
                       onClick={() => toggleLike(index)}
@@ -166,9 +169,31 @@ function Shop() {
                     </span>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
+        </div>
+      </div>
+
+      <div class={bottomNav ? "shop-bottom-mov" : "shop-bottom-mov"}>
+        <div class="category-div">
+          <span>
+            <TbCategory />
+          </span>
+          <span>Category</span>
+        </div>
+
+        <div class="price-div">
+          <span>
+            <TbCategory />
+          </span>
+          <span>Price</span>
+        </div>
+        <div class="discount-div">
+          <span>
+            <TbCategory />
+          </span> 
+          <span>Discount</span>
         </div>
       </div>
     </>
