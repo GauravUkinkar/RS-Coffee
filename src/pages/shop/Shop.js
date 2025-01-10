@@ -18,7 +18,7 @@ function Shop() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const swiperRef = useRef(null);
 
-  const [bottomNav, setBottmNav] = useState(false)
+  const [bottomNav, setBottmNav] = useState(false);
 
   const [likeBtn, setLikeBtn] = useState(false);
 
@@ -32,6 +32,9 @@ function Shop() {
   useEffect(() => {
     AOS.init({ duration: 1200 });
   }, []);
+
+ 
+
 
   const products = [
     {
@@ -180,9 +183,8 @@ function Shop() {
           <span>
             <TbCategory />
           </span>
-          <span>Category</span>
+          <span>Category</span> 
         </div>
-
         <div class="price-div">
           <span>
             <TbCategory />
@@ -192,7 +194,7 @@ function Shop() {
         <div class="discount-div">
           <span>
             <TbCategory />
-          </span> 
+          </span>
           <span>Discount</span>
         </div>
       </div>

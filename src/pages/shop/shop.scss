@@ -157,7 +157,10 @@
   align-items: center;
   justify-content: space-evenly;
   gap: 10px;
-
+  border-top: 1px solid rgba(0, 0, 0, 0.116);
+  position: fixed;
+  bottom: 0;
+  background: white;
   .category-div,
   .discount-div,
   .price-div {
@@ -167,6 +170,31 @@
     justify-content: center;
   }
 }
+
+.shop-bottom-mov .category-div,
+.shop-bottom-mov .discount-div,
+.shop-bottom-mov .price-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.info-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+
 
 @media (max-width: 1000px) {
   .shop-parent {
@@ -330,7 +358,6 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          border: 1px solid;
 
           .top-category {
             img {
