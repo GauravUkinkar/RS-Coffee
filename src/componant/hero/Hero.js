@@ -22,7 +22,7 @@ const Hero = () => {
             precision. Roast coffee with aviation precision.
           </p>
         {/* Button aDD Here */}
-        <div data-aos="fade-up" data-aos-delay="600"><Button  url="/shop" btntxt="Read More"/>
+        <div data-aos="fade-up" data-aos-delay="600"><Button  url="/new-shop" btntxt="Read More"/>
         </div>
         
         </div>
