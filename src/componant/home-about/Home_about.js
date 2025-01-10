@@ -53,7 +53,9 @@ const Home_about = () => {
               freshest possible coffee to small markets that normally would not
               have access to such a premium quality product.
             </p>
+            <div data-aos="fade-up" data-aos-delay="1200">
             <Button  url="/our-coffee" btntxt="Read More"/>
+            </div>
           </div>
         </div>
       </div>

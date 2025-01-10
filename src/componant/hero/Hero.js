@@ -22,7 +22,9 @@ const Hero = () => {
             precision. Roast coffee with aviation precision.
           </p>
         {/* Button aDD Here */}
-        <Button  url="/shop" btntxt="Read More"/>
+        <div data-aos="fade-up" data-aos-delay="600"><Button  url="/shop" btntxt="Read More"/>
+        </div>
+        
         </div>
         <div className="hero-right bg-img-contain" data-aos="fade-up">
           <div className="animation">
