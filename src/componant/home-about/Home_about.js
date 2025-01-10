@@ -53,7 +53,7 @@ const Home_about = () => {
               freshest possible coffee to small markets that normally would not
               have access to such a premium quality product.
             </p>
-            <Button  url="/about" btntxt="Read More"/>
+            <Button  url="/our-coffee" btntxt="Read More"/>
           </div>
         </div>
       </div>

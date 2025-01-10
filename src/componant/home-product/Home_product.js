@@ -178,7 +178,7 @@ const Home_product = ({title}) => {
                       })`,
                     }}
                   ></div>
-                  <Link to="/about" className="btn-n">
+                  <Link to="/cart" className="btn-n">
                     Add To Cart
                   </Link>
                   {/* <Link to="#" className="favourite">

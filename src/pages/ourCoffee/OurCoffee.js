@@ -129,7 +129,7 @@ function OurCoffee() {
               using Wings as the supplier.
             </p>
 
-            <Button btntxt="Read More" url="/product-detail"/>
+            <Button btntxt="Read More" url="/shop"/>
           </div>
           <div className="right-our-coffee">
             <div className="img-coffee-customization bg-img-cover"></div>
