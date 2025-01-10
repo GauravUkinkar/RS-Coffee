@@ -33,7 +33,6 @@ function Header() {
             </span>
             <span>
               <Link to="/cart"><BsCart /></Link>
-              
             </span>
           </div>
           <div class="hamburger-menu" onClick={() => setNavOpen(!navOpen)}>

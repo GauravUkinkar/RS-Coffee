@@ -2,7 +2,6 @@
   width: 100%;
   background-color: var(--accent2);
   height: auto;
-
   margin-top: 80px;
 
   .shop_list_cont {
@@ -14,7 +13,6 @@
     .left_section {
       width: 20%;
       height: 100%;
-      // background-color: red;
       border-right: 1px solid var(--accent);
       display: flex;
       flex-direction: column;
@@ -49,8 +47,8 @@
             border: none;
             outline: 1px solid grey;
             padding: 5px;
-            // border-radius: 5px;
             padding-right: 30px;
+            border-radius: 5px;
           }
 
           .icon {
