@@ -11,6 +11,8 @@ import Header from "./componant/header/Header";
 import ScrollToTop from "./Others/ScrollToTop";
 import ScrollToTopButton from "./Others/ScrollToTopButton";
 import Our_cart from "./pages/cart/Our_cart";
+import NewShop from "./pages/new-shop/NewShop";
+
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/our-coffee" element={<OurCoffee />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/new-shop" element={<NewShop />} />
         <Route path="/product-detail" element={<Product_detail /> } />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Our_cart /> } />
