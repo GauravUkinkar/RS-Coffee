@@ -24,7 +24,6 @@ const Hero = () => {
         {/* Button aDD Here */}
         <div data-aos="fade-up" data-aos-delay="600"><Button  url="/new-shop" btntxt="Read More"/>
         </div>
-        
         </div>
         <div className="hero-right bg-img-contain" data-aos="fade-up">
           <div className="animation">
