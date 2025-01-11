@@ -176,7 +176,7 @@ function NewShop() {
                       ))}
                     </div>
                   </div>
-      
+                                    
                   <div class="category">
                     <h3>Category</h3>
                     <div class="cate_list">
@@ -200,7 +200,7 @@ function NewShop() {
                         getAriaValueText={valuetext}
                         min={100}
                         max={6700}
-                        step={50} // Adjust the step for finer or coarser control
+                        step={50}
                       />
                     </div>
                     <p>
@@ -239,7 +239,7 @@ function NewShop() {
                           </span>
                         </div>
                       </div>
-      
+                        
                       <div class="list">
                         <p>Recommended</p>
                         <p>Recommended</p>
@@ -261,9 +261,7 @@ function NewShop() {
                             </div>
                             <div class="content">
                               <p>{item.category}</p>
-      
                               <h4>{item.name}</h4>
-      
                               <h3 className="price">{item.price}</h3>
                               <Button btntxt="Add to cart" url="/cart" />
                             </div>
